@@ -97,7 +97,7 @@ class ScraperAndSplitter:
 
 # Usage
 if __name__ == "__main__":
-    base_url = 'https://pornone.com'  # Replace with your target URL
+    base_url = 'https://linkedin.com'  # Replace with your target URL
     event_id = '123456'  # Replace with your unique event ID
     scraper_and_splitter = ScraperAndSplitter(base_url, event_id)
     event_data_object = scraper_and_splitter.scrape_content()  # Returns the EventData object
