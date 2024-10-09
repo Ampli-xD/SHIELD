@@ -10,7 +10,7 @@ class AudioData(BaseData):
         self.format = None
         self.duration = None
 
-    def _load_audio(self):
+    def load_audio(self):
         """Load the audio file when needed."""
         if self.audio is None:
             try:
