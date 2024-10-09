@@ -10,7 +10,7 @@ class ImageData(BaseData):
         self.format = None
         self.size = None
 
-    def _load_image(self):
+    def load_image(self):
         if self.image is None:
             try:
                 self.image = Image.open(self.image_path)
