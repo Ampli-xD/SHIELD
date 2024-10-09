@@ -11,7 +11,7 @@ class VideoData(BaseData):
         self.frame_count = None
         self.fps = None
 
-    def _load_video(self):
+    def load_video(self):
         if self.video is None:
             try:
                 self.video = cv2.VideoCapture(self.video_path)
