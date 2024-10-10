@@ -37,7 +37,8 @@ class CorruptionDetector:
 
     def check_video_integrity(self, video_data):
         try:
-            cap = cv2.VideoCapture(video_data.video_path)
+            # cap = cv2.VideoCapture(video_data.video_path)
+            cap = video_data.video
             if not cap.isOpened():
                 return False
             frame_count = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
@@ -48,21 +49,34 @@ class CorruptionDetector:
 
     def is_corrupted(self, data_object):
         # Determine the type and apply the appropriate check
-        if isinstance(data_object, TextData):
+        # if isinstance(data_object, TextData):
+        #     if not self.check_text_integrity(data_object):
+        #         self.mark_corrupted(data_object)
+        # elif isinstance(data_object, ImageData):
+        #     if not self.check_image_integrity(data_object):
+        #         self.mark_corrupted(data_object)
+        # elif isinstance(data_object, AudioData):
+        #     if not self.check_audio_integrity(data_object):
+        #         self.mark_corrupted(data_object)
+        # elif isinstance(data_object, VideoData):
+        #     if not self.check_video_integrity(data_object):
+        #         self.mark_corrupted(data_object)
+        data_type = data_object.data_type
+        if data_type == "text":
             if not self.check_text_integrity(data_object):
                 self.mark_corrupted(data_object)
-        elif isinstance(data_object, ImageData):
+        elif data_type == "image":
             if not self.check_image_integrity(data_object):
                 self.mark_corrupted(data_object)
-        elif isinstance(data_object, AudioData):
+        elif data_type == "audio":
             if not self.check_audio_integrity(data_object):
                 self.mark_corrupted(data_object)
-        elif isinstance(data_object, VideoData):
+        elif data_type == "video":
             if not self.check_video_integrity(data_object):
                 self.mark_corrupted(data_object)
 
     def mark_corrupted(self, data_object):
-        data_object.set_corrupted()
+        data_object.corrupted = True
         self.corrupted_items.append(data_object)
 
     def process_all(self):
