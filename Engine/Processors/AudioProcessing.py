@@ -13,14 +13,14 @@ class AudioProcessor:
         try:
             transcription = self.client.audio.transcriptions.create(
                 file=self.audio_data.audio_path,
-                    model=model,
-                    prompt=prompt,
+                model=model,
+                prompt=prompt,
                 response_format="verbose_json",
-                    language=language,
+                language=language,
                 temperature=temperature,
                 timeout=1000
-                )
-            response_text = transcription.text
+            )
+            response_text = transcription
             self.update_context(response_text)
 
         except Exception as e:

@@ -10,7 +10,7 @@ def encode_image(image_path):
 
 
 # Path to your image
-image_path = "../../TestData/download.jpeg"
+image_path = "../../Tests/TestData/download.jpeg"
 
 # Getting the base64 string
 base64_image = encode_image(image_path)
