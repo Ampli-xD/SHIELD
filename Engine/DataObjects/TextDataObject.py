@@ -1,9 +1,9 @@
-from DataObjects.Base import BaseData
+from Engine.DataObjects.Base import BaseData
 
 
 class TextData(BaseData):
-    def __init__(self, text_content, event_id, serial_id):
-        super().__init__(event_id, serial_id, "text")
+    def __init__(self, text_content, event_id):
+        super().__init__(event_id, "text")
         self.text_content = text_content
 
     def load_data(self):

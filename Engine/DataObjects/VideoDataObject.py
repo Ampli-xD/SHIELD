@@ -1,10 +1,11 @@
-from DataObjects.Base import BaseData
 import cv2
+
+from Engine.DataObjects.Base import BaseData
 
 
 class VideoData(BaseData):
-    def __init__(self, video_path, event_id, serial_id):
-        super().__init__(event_id, serial_id, "video")
+    def __init__(self, video_path, event_id):
+        super().__init__(event_id, "video")
         self.video_path = video_path
         self.video = None
         self.format = None
@@ -28,25 +29,25 @@ class VideoData(BaseData):
         return True
 
     def get_context(self):
-        return super().context
+        return self.context
 
     def get_video(self):
-        if self._load_video():
+        if self.load_data():
             return self.video
         return None
 
     def get_format(self):
-        if self._load_video():
+        if self.load_data():
             return self.format
         return None
 
     def get_frame_count(self):
-        if self._load_video():
+        if self.load_data():
             return self.frame_count
         return None
 
     def get_fps(self):
-        if self._load_video():
+        if self.load_data():
             return self.fps
         return None
 

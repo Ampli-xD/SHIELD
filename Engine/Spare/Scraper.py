@@ -1,12 +1,14 @@
-import requests
-from bs4 import BeautifulSoup
 import os
 import uuid
-from DataObjects.Event import EventData
-from DataObjects.Text import TextData
-from DataObjects.Audio import AudioData
-from DataObjects.Video import VideoData
-from DataObjects.Image import ImageData
+
+import requests
+from bs4 import BeautifulSoup
+
+from Engine.DataObjects.AudioDataObject import AudioData
+from Engine.DataObjects.Event import EventData
+from Engine.DataObjects.ImageDataObject import ImageData
+from Engine.DataObjects.TextDataObject import TextData
+from Engine.DataObjects.VideoDataObject import VideoData
 
 
 class ScraperAndSplitter:
@@ -80,16 +82,16 @@ class ScraperAndSplitter:
 
         for content_type, content in content_list:
             if content_type == 'text':
-                text_data = TextData(content, self.event_id, uuid.uuid4())  # Create a TextData object
+                text_data = TextData(content, self.event_id)  # Create a TextData object
                 event_data.add_data(text_data)  # Use the add_data method
             elif content_type == 'image':
-                image_data = ImageData(content, self.event_id, uuid.uuid4())  # Create an ImageData object
+                image_data = ImageData(content, self.event_id)  # Create an ImageData object
                 event_data.add_data(image_data)  # Use the add_data method
             elif content_type == 'audio':
-                audio_data = AudioData(content, self.event_id, uuid.uuid4())  # Create an AudioData object
+                audio_data = AudioData(content, self.event_id)  # Create an AudioData object
                 event_data.add_data(audio_data)  # Use the add_data method
             elif content_type == 'video':
-                video_data = VideoData(content, self.event_id, uuid.uuid4())  # Create a VideoData object
+                video_data = VideoData(content, self.event_id)  # Create a VideoData object
                 event_data.add_data(video_data)  # Use the add_data method
 
         return event_data

@@ -1,10 +1,11 @@
-from DataObjects.Base import BaseData
 from PIL import Image
+
+from Engine.DataObjects.Base import BaseData
 
 
 class ImageData(BaseData):
-    def __init__(self, image_path, event_id, serial_id):
-        super().__init__(event_id, serial_id, "image")
+    def __init__(self, image_path, event_id):
+        super().__init__(event_id, "image")
         self.image_path = image_path
         self.image = None
         self.format = None
@@ -22,26 +23,26 @@ class ImageData(BaseData):
         return True
 
     def get_context(self):
-        return super().context
+        return self.context
 
     def get_image(self):
-        if self._load_image():
+        if self.load_data():
             return self.image
         return None
 
     def get_format(self):
-        if self._load_image():
+        if self.load_data():
             return self.format
         return None
 
     def get_size(self):
-        if self._load_image():
+        if self.load_data():
             return self.size
         return None
 
     def set_context(self, text):
         try:
-            super().context = text
+            self.context = text
             return True
         except Exception as e:
             print(f"Error setting context: {e}")

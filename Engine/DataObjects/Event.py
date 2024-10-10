@@ -19,7 +19,7 @@ class EventData:
 
     def get_data_by_type(self, data_type):
         """Fetches all data objects of a specific type."""
-        return [item for item in self.data_items if item.type == data_type]
+        return [item for item in self.data_items if item.data_type == data_type]
 
     def get_all_data(self):
         """Returns all data objects in the event."""

@@ -1,8 +1,10 @@
-import os
-from PIL import Image
-import cv2
-import wave
 import contextlib
+import os
+import wave
+
+import cv2
+from PIL import Image
+
 
 class CorruptionDetector:
     def __init__(self, event_data):

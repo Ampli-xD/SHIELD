@@ -1,10 +1,11 @@
-from DataObjects.Base import BaseData
 from pydub import AudioSegment
+
+from Engine.DataObjects.Base import BaseData
 
 
 class AudioData(BaseData):
-    def __init__(self, audio_path, event_id, serial_id):
-        super().__init__(event_id, serial_id, "audio")
+    def __init__(self, audio_path, event_id):
+        super().__init__(event_id, "audio")
         self.audio_path = audio_path
         self.audio = None
         self.format = None
@@ -23,26 +24,26 @@ class AudioData(BaseData):
         return True
 
     def get_context(self):
-        return super().context
+        return self.context
 
     def get_audio(self):
-        if self._load_audio():
+        if self.load_data():
             return self.audio
         return None
 
     def get_format(self):
-        if self._load_audio():
+        if self.load_data():
             return self.format
         return None
 
     def get_duration(self):
-        if self._load_audio():
+        if self.load_data():
             return self.duration
         return None
 
     def set_context(self, text):
         try:
-            super().context = text
+            self.context = text
             return True
         except Exception as e:
             print(f"Error setting context: {e}")
