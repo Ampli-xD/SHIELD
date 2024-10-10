@@ -9,19 +9,19 @@ class AudioProcessor:
     def fetch_audio_transcription(self, audio_data_object, model="whisper-large-v3-turbo", prompt="", language="en",
                                   temperature=0.0):
         self.audio_data = audio_data_object
+        print(self.audio_data.audio_path)
         try:
-            with open(self.audio_data.audio_path, "rb") as file:
-                transcription = self.client.audio.transcriptions.create(
-                    file=(self.audio_data.audio_path, file.read()),
+            transcription = self.client.audio.transcriptions.create(
+                file=self.audio_data.audio_path,
                     model=model,
                     prompt=prompt,
-                    response_format="json",
+                response_format="verbose_json",
                     language=language,
-                    temperature=temperature
+                temperature=temperature,
+                timeout=1000
                 )
-
-                response_text = transcription.text
-                self.update_context(response_text)
+            response_text = transcription.text
+            self.update_context(response_text)
 
         except Exception as e:
             print(f"Error during audio transcription: {e}")

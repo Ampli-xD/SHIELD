@@ -35,6 +35,7 @@ def perform_tasks(folder_path):
     image_processor = ImageProcessing.ImageProcessor(api_key)
 
     for i in event.get_data_by_type('audio'):
+        print(i.audio_path)
         audio_processor.fetch_audio_transcription(i)
         print(i.context)
 
@@ -44,6 +45,7 @@ def perform_tasks(folder_path):
         print(i.context)
 
 
+
 if __name__ == "__main__":
-    folder_path = '../TestData/'
+    folder_path = 'C:\\Users\\disha\\IdeaProjects\\MiniProject\\TestData'
     perform_tasks(folder_path)

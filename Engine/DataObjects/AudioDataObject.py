@@ -15,6 +15,7 @@ class AudioData(BaseData):
         """Load the audio file when needed."""
         if self.audio is None:
             try:
+                print(self.audio_path)
                 self.audio = AudioSegment.from_file(self.audio_path)
                 self.format = self.audio.format
                 self.duration = self.audio.duration_seconds
