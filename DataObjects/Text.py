@@ -6,6 +6,9 @@ class TextData(BaseData):
         super().__init__(event_id, serial_id, "text")
         self.text_content = text_content
 
+    def load_data(self):
+        pass
+
     def get_context(self):
         return super().context
 
