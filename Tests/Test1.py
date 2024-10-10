@@ -1,3 +1,4 @@
+import os.path
 from pathlib import Path
 
 from Engine.DataObjects import ImageDataObject, VideoDataObject, Event, TextDataObject, AudioDataObject
@@ -45,7 +46,6 @@ def perform_tasks(folder_path):
         print(i.context)
 
 
-
 if __name__ == "__main__":
-    folder_path = 'C:\\Users\\disha\\IdeaProjects\\MiniProject\\TestData'
+    folder_path = os.path.dirname(__file__) + '/TestData/'
     perform_tasks(folder_path)
