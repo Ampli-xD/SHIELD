@@ -3,3 +3,4 @@ pydub
 opencv-python
 requests
 bs4
+groq
