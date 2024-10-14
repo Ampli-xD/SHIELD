@@ -2,7 +2,7 @@ import os.path
 from pathlib import Path
 
 from Engine.DataObjects import ImageDataObject, VideoDataObject, Event, TextDataObject, AudioDataObject
-from Engine.Processors import AudioProcessing, ImageProcessing
+from Engine.Processors import AudioProcessing, ImageProcessing, VideoProcessing
 
 AUDIO_EXTENSIONS = {'.mp3', '.mp4', '.mpeg', '.mpga', '.m4a', '.wav', '.webm'}
 IMAGE_EXTENSIONS = {'.jpg', '.jpeg', '.png', '.gif'}
@@ -34,6 +34,12 @@ def perform_tasks(folder_path):
     api_key = "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"
     audio_processor = AudioProcessing.AudioProcessor(api_key)
     image_processor = ImageProcessing.ImageProcessor(api_key)
+    video_processor = VideoProcessing.VideoProcessor("AIzaSyD9ygld0-1qZsYekMoOrZYFGDPuEfDD7xA")
+
+    for i in event.get_data_by_type('video'):
+        video_processor.fetch_video_analysis(i)
+        print(i.get_path())
+        print(i.context)
 
     for i in event.get_data_by_type('audio'):
         print(i.audio_path)

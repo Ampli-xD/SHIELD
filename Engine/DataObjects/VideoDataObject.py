@@ -51,6 +51,11 @@ class VideoData(BaseData):
             return self.fps
         return None
 
+    def get_path(self):
+        if self.video_path is not None:
+            return self.video_path
+        return None
+
     def set_context(self, text):
         try:
             super().context = text

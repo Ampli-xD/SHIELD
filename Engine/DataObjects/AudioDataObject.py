@@ -42,6 +42,11 @@ class AudioData(BaseData):
             return self.duration
         return None
 
+    def get_path(self):
+        if self.audio_path is not None:
+            return self.audio_path
+        return None
+
     def set_context(self, text):
         try:
             self.context = text

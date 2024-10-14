@@ -40,6 +40,11 @@ class ImageData(BaseData):
             return self.size
         return None
 
+    def get_path(self):
+        if self.image_path is not None:
+            return self.image_path
+        return None
+
     def set_context(self, text):
         try:
             self.context = text
