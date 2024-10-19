@@ -1,12 +1,14 @@
-from PIL import Image
 import os
+
+from PIL import Image
+
 
 class ImageCorruptionDetector:
     def __init__(self):
         pass
 
-class ImageCorruptionDetector:
-    def check_integrity(self, image_data):
+    @staticmethod
+    def check_integrity(image_data):
         try:
             with Image.open(image_data.file_path) as img:
                 img.verify()
@@ -14,7 +16,8 @@ class ImageCorruptionDetector:
         except Exception:
             return False
 
-    def convert_format(self, image_data, output_format='PNG'):
+    @staticmethod
+    def convert_format(image_data, output_format='PNG'):
         try:
             with Image.open(image_data.file_path) as img:
                 output_path = os.path.splitext(image_data.file_path)[0] + f'.{output_format.lower()}'

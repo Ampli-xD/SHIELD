@@ -1,12 +1,14 @@
-import cv2
 import os
+
+import cv2
+
 
 class VideoCorruptionDetector:
     def __init__(self):
         pass
-    
-class VideoCorruptionDetector:
-    def check_integrity(self, video_data):
+
+    @staticmethod
+    def check_integrity(video_data):
         try:
             cap = cv2.VideoCapture(video_data.file_path)
             if not cap.isOpened():
@@ -17,7 +19,8 @@ class VideoCorruptionDetector:
         except Exception:
             return False
 
-    def convert_format(self, video_data, output_format='avi'):
+    @staticmethod
+    def convert_format(video_data, output_format='avi'):
         try:
             cap = cv2.VideoCapture(video_data.file_path)
             output_path = os.path.splitext(video_data.file_path)[0] + f'.{output_format}'

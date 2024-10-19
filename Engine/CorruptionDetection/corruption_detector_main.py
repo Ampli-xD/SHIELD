@@ -1,7 +1,8 @@
-from text_corruption_detector import TextCorruptionDetector
-from image_corruption_detector import ImageCorruptionDetector
 from audio_corruption_detector import AudioCorruptionDetector
+from image_corruption_detector import ImageCorruptionDetector
+from text_corruption_detector import TextCorruptionDetector
 from video_corruption_detector import VideoCorruptionDetector
+
 
 class CorruptionDetector:
     def __init__(self, event_data):
@@ -16,16 +17,16 @@ class CorruptionDetector:
     def is_corrupted(self, data_object):
         data_type = data_object.data_type
         if data_type == "text":
-            if not self.text_detector.check_text_integrity(data_object):
+            if not self.text_detector.check_integrity(data_object):
                 self.mark_corrupted(data_object)
         elif data_type == "image":
-            if not self.image_detector.check_image_integrity(data_object):
+            if not self.image_detector.check_integrity(data_object):
                 self.mark_corrupted(data_object)
         elif data_type == "audio":
-            if not self.audio_detector.check_audio_integrity(data_object):
+            if not self.audio_detector.check_integrity(data_object):
                 self.mark_corrupted(data_object)
         elif data_type == "video":
-            if not self.video_detector.check_video_integrity(data_object):
+            if not self.video_detector.check_integrity(data_object):
                 self.mark_corrupted(data_object)
 
     def mark_corrupted(self, data_object):
@@ -42,10 +43,10 @@ class CorruptionDetector:
         return self.text_detector.convert_text_to_upper(text_data)
 
     def convert_image(self, image_data, output_format='PNG'):
-        return self.image_detector.convert_image_format(image_data, output_format)
+        return self.image_detector.convert_format(image_data, output_format)
 
     def convert_audio(self, audio_data, output_format='mp3'):
-        return self.audio_detector.convert_audio_format(audio_data, output_format)
+        return self.audio_detector.convert_format(audio_data, output_format)
 
     def convert_video(self, video_data, output_format='avi'):
-        return self.video_detector.convert_video_format(video_data, output_format)
+        return self.video_detector.convert_format(video_data, output_format)

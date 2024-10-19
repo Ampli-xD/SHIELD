@@ -9,16 +9,15 @@ from PIL import Image
 class CorruptionDetector:
     def __init__(self, event_data):
         self.event_data = event_data
-        self.corrupted_items = [] 
-         
+        self.corrupted_items = []
 
     def check_text_integrity(self, text_data):
-  
+
         if os.path.exists(text_data.text_content):
             with open(text_data.text_content, 'r', encoding='utf-8') as file:
                 content = file.read().strip()
-            return bool(content)  
-        return False  
+            return bool(content)
+        return False
 
     def check_image_integrity(self, image_data):
         try:
@@ -86,4 +85,4 @@ class CorruptionDetector:
             data_object.load_data()
             self.is_corrupted(data_object)
 
-        return self.corrupted_items  
+        return self.corrupted_items
