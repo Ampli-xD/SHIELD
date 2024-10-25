@@ -24,7 +24,7 @@ class ImageProcessor:
                         "content": [
                             {
                                 "type": "text",
-                                "text": "Elaborate this in depth without missing any details in your response."
+                                "text": "Elaborate this in depth without missing any details in your response. you are not allowed to add anything on your own"
 
                             },
                             {
@@ -36,7 +36,7 @@ class ImageProcessor:
                         ],
                     }
                 ],
-                model="llama-3.2-11b-vision-preview",
+                model="llava-v1.5-7b-4096-preview",
             )
 
             response_content = chat_completion.choices[0].message.content

@@ -16,6 +16,9 @@ class BaseData:
     def get_data_type(self):
         return self.data_type
 
+    def get_context(self):
+        return self.context
+
     def set_event_id(self, event_id):
         self.event_id = event_id
         return True

@@ -25,6 +25,9 @@ class EventData:
         """Returns all data objects in the event."""
         return self.data_items
 
+    def get_number_of_data_objects(self):
+        return self.serial_counter
+
     def clear_data(self):
         try:
             self.data_items = []
