@@ -1,6 +1,6 @@
 from groq import Groq
 
-from Engine.LLMHandler.LLMPrompt import Prompt
+from Engine.LLMHandler.LLMPrompts import Prompt
 
 
 class LLMGenerator:
