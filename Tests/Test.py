@@ -1,3 +1,4 @@
+import json
 import os.path
 from pathlib import Path
 
@@ -5,6 +6,7 @@ from Engine.DataObjects import ImageDataObject, VideoDataObject, Event, TextData
 from Engine.LLMHandler.LLMCaller import LLMGenerator
 from Engine.Processors import AudioProcessing, ImageProcessing, VideoProcessing
 from Engine.Processors.TextProcessing import ContextCombiner
+from Engine.VectorHandler.MultiSetVectorScoring import VectorScoring
 
 AUDIO_EXTENSIONS = {'.mp3', '.mp4', '.mpeg', '.mpga', '.m4a', '.wav', '.webm'}
 IMAGE_EXTENSIONS = {'.jpg', '.jpeg', '.png', '.gif'}
@@ -38,6 +40,7 @@ def perform_tasks(folder_path):
     image_processor = ImageProcessing.ImageProcessor(api_key)
     video_processor = VideoProcessing.VideoProcessor("AIzaSyD9ygld0-1qZsYekMoOrZYFGDPuEfDD7xA")
     llm_generator = LLMGenerator(api_key)
+    vector_scorer = VectorScoring(path="../Engine/VectorHandler/persistent_chroma_db")
 
     for i in event.get_all_data():
         if i.get_data_type() == 'video':
@@ -64,9 +67,18 @@ def perform_tasks(folder_path):
 
     combiner = ContextCombiner()
     combiner.combine_contexts(event)
-    print(combiner.get_final_context())
-    response = llm_generator.generate_text(combiner.get_final_context())
-    print(response)
+    # print(combiner.get_final_context())
+
+    json_vector_response = vector_scorer.get_vector_scores(event)
+
+    json_llm_response = llm_generator.generate_text(event.get_combined_text())
+
+    print(type(json_vector_response))
+    print(type(json_llm_response))
+
+    print(json.dumps(json_vector_response, indent=4))
+    print("///////////////////////////////////////////////////////////////////////////////////////////")
+    print(json.dumps(json_llm_response, indent=4))
 
 
 if __name__ == "__main__":

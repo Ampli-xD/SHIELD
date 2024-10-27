@@ -3,6 +3,7 @@ class EventData:
         self.event_id = event_id
         self.data_items = []
         self.serial_counter = 0
+        self.combined_text = None
 
     def add_data(self, data_object):
         """Adds a new data object to the event, assigning a serial ID."""
@@ -27,6 +28,12 @@ class EventData:
 
     def get_number_of_data_objects(self):
         return self.serial_counter
+
+    def set_combined_text(self, text):
+        self.combined_text = text
+
+    def get_combined_text(self):
+        return self.combined_text
 
     def clear_data(self):
         try:

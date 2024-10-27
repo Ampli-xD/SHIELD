@@ -6,6 +6,7 @@ each category has to be scored out of 100% independently with precise decimal va
 where 100 signifies maximum of that category and 0 signifies not a single element of that category,
 a message can have multiple categories that can be scored with high precision decimal percentages.
 Overall scoring doesn't mean average of all the serial ids rather a score of a combine context of all the serial ids.
+Your json output should contain all the categories in the proper json format, even if the % of that category is 0%.
 
 1. sexually_explicit_material
 2. violence_and_terrorism
@@ -44,7 +45,7 @@ Your response should only contain the following JSON format nothing else:
    },
    
    
-   overall
+   "serial_id : "OVERALL"
    "score" : {
        "category_name": percentage,
        "category_name": percentage,

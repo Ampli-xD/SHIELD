@@ -19,17 +19,15 @@ def load_categories(collection_name="CategoryBags",
     Returns:
         tuple: (ChromaDB collection, list of loaded categories)
     """
-    # Initialize ChromaDB with BERT embeddings (all-MiniLM-L6-v2 is optimized for semantic similarity)
+
     embedding_function = embedding_functions.SentenceTransformerEmbeddingFunction(
         model_name="all-MiniLM-L6-v2"
     )
 
     client = chromadb.PersistentClient(path=db_path)
 
-    # Check if the collection exists
     existing_collections = client.list_collections()
     if collection_name not in [c.name for c in existing_collections]:
-        # Create a new collection if it does not exist
         collection = client.create_collection(
             name=collection_name,
             embedding_function=embedding_function,
@@ -45,7 +43,6 @@ def load_categories(collection_name="CategoryBags",
     if not path.exists():
         raise FileNotFoundError(f"Directory not found: {category_bags_path}")
 
-    # Clear existing collection for fresh load
     try:
         collection.delete(ids=collection.get()['ids'])
         print("Cleared existing collection")
@@ -55,8 +52,7 @@ def load_categories(collection_name="CategoryBags",
     loaded_categories = []
     total_entries = 0
 
-    # Process each JSON file in batches
-    batch_size = 1000  # Adjust based on your memory constraints
+    batch_size = 1000
     for json_file in path.glob("*.json"):
         category_name = json_file.stem
 
@@ -68,15 +64,14 @@ def load_categories(collection_name="CategoryBags",
                 print(f"Warning: {category_name}.json should contain a list of words/phrases")
                 continue
 
-            # Process in batches to handle large files
             for i in range(0, len(words), batch_size):
                 batch = words[i:i + batch_size]
                 ids = [f"{category_name}_{j}" for j in range(i, i + len(batch))]
                 metadatas = [
                     {
                         "category": category_name,
-                        "index": j,  # Store index for weighted scoring
-                        "total_entries": len(words)  # Store total entries for normalization
+                        "index": j,
+                        "total_entries": len(words)
                     }
                     for j in range(i, i + len(batch))
                 ]
