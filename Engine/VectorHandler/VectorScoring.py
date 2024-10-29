@@ -20,7 +20,7 @@ class VectorBasedScoringSystem:
         except ValueError:
             raise ValueError("The collection 'CategoryBags' does not exist. Please ensure it is loaded first.")
 
-    def score_vectors(self, text, n_results=15):
+    def score_text_by_vectors(self, text, n_results=15):
         """Get similarity scores for input text across all categories."""
         if self.collection.count() == 0:
             raise ValueError("No categories loaded. Please run load() first.")
@@ -77,7 +77,7 @@ My heart doubts the line of love and obsession
 As I sit and watch the rain
 """
 
-        results = system.score_vectors(test_text)
+        results = system.score_text_by_vectors(test_text)
         print(json.dumps(results, indent=4))
         # print(f"\nFor the Text:{test_text}")
         # print("\nSimilarity Scores (Percentage):")

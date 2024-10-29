@@ -2,14 +2,12 @@ import json
 
 from groq import Groq
 
-from Engine.LLMHandler.LLMPrompts import Prompt
-
 
 class LLMGenerator:
     def __init__(self, api_key):
         self.client = Groq(api_key=api_key)
 
-    def generate_text(self, user_message, model="llama-3.1-70b-versatile", system_prompt=Prompt,
+    def score_text_by_llm(self, user_message, model="llama-3.1-70b-versatile", system_prompt="",
                       temperature=0.8, max_tokens=3000, top_p=1, stop=None, stream=False):
         try:
             # Create the chat completion request

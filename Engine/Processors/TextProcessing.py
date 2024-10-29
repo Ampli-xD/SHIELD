@@ -17,8 +17,6 @@ class ContextCombiner:
     @staticmethod
     def details_adder(data_object):
         return f"""
-serial_id: {data_object.event_id}.{data_object.serial_id} {data_object.data_type}
-
 {str(data_object.get_context())}
 
 
@@ -26,3 +24,5 @@ serial_id: {data_object.event_id}.{data_object.serial_id} {data_object.data_type
 
     def get_final_context(self):
         return self.final_context
+
+# serial_id: {data_object.event_id}.{data_object.serial_id} {data_object.data_type}

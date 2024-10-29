@@ -1,15 +1,16 @@
 from Engine.DataObjects.Event import EventData
-from Engine.VectorHandler.VectorScoring import VectorBasedScoringSystem
+from Engine.LLMHandler.LLMCaller import LLMGenerator
+from Engine.LLMHandler.LLMPrompts import SingleAnalysisPrompt
 from Runner.Monitor.PubSub import Publisher
 
 
-class VectorScoring:
-    def __init__(self, path):
-        self.publisher = Publisher(module="Vector Scoring Module")
-        self.vec_score_sys = VectorBasedScoringSystem(path=path)
+class LLMScoring:
+    def __init__(self, api_key):
+        self.llm_generator = LLMGenerator(api_key)
         self.final_json = []
+        self.monitor = Publisher(module="LLM Scoring Module")
 
-    def get_vector_scores(self, event: EventData):
+    def get_llm_scores(self, event: EventData):
         self.final_json = []
 
         overall = event.get_combined_text()
@@ -17,7 +18,8 @@ class VectorScoring:
 
         for i in data_objects:
             data_serial_id = f"{i.event_id}.{i.serial_id}"
-            data_object_score = self.vec_score_sys.score_text_by_vectors(i.get_context())
+            data_object_score = self.llm_generator.score_text_by_llm(i.get_context(),
+                                                                     system_prompt=SingleAnalysisPrompt)
             data_set = {
                 "serial_id": data_serial_id,
                 "score": data_object_score
@@ -25,7 +27,7 @@ class VectorScoring:
             self.publisher.publish(objective=f"scored id {data_serial_id}", module="VectorScoring", data=data_set)
             self.final_json.append(data_set)
 
-        combine_text_results = self.vec_score_sys.score_text_by_vectors(overall)
+        combine_text_results = self.llm_generator.score_text_by_llm(overall, system_prompt=SingleAnalysisPrompt)
         self.final_json.append({
             "serial_id": "OVERALL",
             "score": combine_text_results
