@@ -12,3 +12,4 @@ transformers
 faiss-cpu
 chromadb
 sentence_transformers
+zmq

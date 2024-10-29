@@ -1,9 +1,8 @@
-import json
 import os.path
 from pathlib import Path
 
 from Engine.DataObjects import ImageDataObject, VideoDataObject, Event, TextDataObject, AudioDataObject
-from Engine.LLMHandler.LLMCaller import LLMGenerator
+from Engine.LLMHandler.MultiSetLLMScoring import LLMScoring
 from Engine.Processors import AudioProcessing, ImageProcessing, VideoProcessing
 from Engine.Processors.TextProcessing import ContextCombiner
 from Engine.VectorHandler.MultiSetVectorScoring import VectorScoring
@@ -39,7 +38,7 @@ def perform_tasks(folder_path):
     audio_processor = AudioProcessing.AudioProcessor(api_key)
     image_processor = ImageProcessing.ImageProcessor(api_key)
     video_processor = VideoProcessing.VideoProcessor("AIzaSyD9ygld0-1qZsYekMoOrZYFGDPuEfDD7xA")
-    llm_generator = LLMGenerator(api_key)
+    llm_scorer = LLMScoring(api_key)
     vector_scorer = VectorScoring(path="../Engine/VectorHandler/persistent_chroma_db")
 
     for i in event.get_all_data():
@@ -71,14 +70,14 @@ def perform_tasks(folder_path):
 
     json_vector_response = vector_scorer.get_vector_scores(event)
 
-    json_llm_response = llm_generator.generate_text(event.get_combined_text())
+    json_llm_response = llm_scorer.get_llm_scores(event)
 
-    print(type(json_vector_response))
-    print(type(json_llm_response))
-
-    print(json.dumps(json_vector_response, indent=4))
-    print("///////////////////////////////////////////////////////////////////////////////////////////")
-    print(json.dumps(json_llm_response, indent=4))
+    # print(type(json_vector_response))
+    # print(type(json_llm_response))
+    #
+    # print(json.dumps(json_vector_response, indent=4))
+    # print("///////////////////////////////////////////////////////////////////////////////////////////")
+    # print(json.dumps(json_llm_response, indent=4))
 
 
 if __name__ == "__main__":
