@@ -1,4 +1,5 @@
 import os.path
+import time
 from pathlib import Path
 
 from Engine.DataObjects import ImageDataObject, VideoDataObject, Event, TextDataObject, AudioDataObject
@@ -6,8 +7,16 @@ from Engine.LLMHandler.MultiSetLLMScoring import LLMScoring
 from Engine.Processors import AudioProcessing, ImageProcessing, VideoProcessing
 from Engine.Processors.TextProcessing import ContextCombiner
 from Engine.VectorHandler.MultiSetVectorScoring import VectorScoring
+from Runner.Monitor.PubSub import Publisher
 
-AUDIO_EXTENSIONS = {'.mp3', '.mp4', '.mpeg', '.mpga', '.m4a', '.wav', '.webm'}
+monitor = Publisher()
+for i in range(0, 5):
+    print(f"System initializing in {5 - i}...")
+    time.sleep(1)
+
+monitor.publish(objective="Imported all the modules..", module="RUNNER")
+
+AUDIO_EXTENSIONS = {'.mp3', '.mpeg', '.mpga', '.m4a', '.wav', '.webm'}
 IMAGE_EXTENSIONS = {'.jpg', '.jpeg', '.png', '.gif'}
 TEXT_EXTENSIONS = {'.txt'}
 VIDEO_EXTENSIONS = {'.mp4', '.avi', '.mov', '.mkv', '.flv'}
@@ -17,8 +26,16 @@ def segregate_files(folder_path, event_object):
     for file in Path(folder_path).iterdir():
         if file.is_file():
             ext = file.suffix.lower()
+            # print(file.name, ext)
+            # if ext in AUDIO_EXTENSIONS:
+            #     print("extention found in video")
+            #     video_object = VideoDataObject.VideoData(file, event_object.event_id)
+            #     event_object.add_data(video_object)
+
             if ext in AUDIO_EXTENSIONS:
                 audio_object = AudioDataObject.AudioData(file, event_object.event_id)
+                # corruption detection
+                # splitting or cleaning
                 event_object.add_data(audio_object)
             elif ext in IMAGE_EXTENSIONS:
                 image_object = ImageDataObject.ImageData(file, event_object.event_id)
@@ -32,16 +49,19 @@ def segregate_files(folder_path, event_object):
 
 
 def perform_tasks(folder_path):
-    event = Event.EventData(event_id=1234)
+    event = Event.EventData(event_id=1234, monitor=monitor)
     segregate_files(folder_path, event)
     api_key = "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"
     audio_processor = AudioProcessing.AudioProcessor(api_key)
     image_processor = ImageProcessing.ImageProcessor(api_key)
     video_processor = VideoProcessing.VideoProcessor("AIzaSyD9ygld0-1qZsYekMoOrZYFGDPuEfDD7xA")
-    llm_scorer = LLMScoring(api_key)
-    vector_scorer = VectorScoring(path="../Engine/VectorHandler/persistent_chroma_db")
+    llm_scorer = LLMScoring(api_key, monitor)
+    vector_scorer = VectorScoring(path="../Engine/VectorHandler/persistent_chroma_db", monitor=monitor)
 
     for i in event.get_all_data():
+        # if i.get_data_type() == 'video':
+        #     print("found video object in the event")
+        #     video_processor.fetch_video_analysis(i)
         if i.get_data_type() == 'video':
             video_processor.fetch_video_analysis(i)
         elif i.get_data_type() == 'audio':

@@ -1,22 +1,28 @@
-import json
-
 import chromadb
+from chromadb.config import Settings
 from chromadb.utils import embedding_functions
 
 
 class VectorBasedScoringSystem:
-    def __init__(self, path="./persistent_chroma_db"):
+    def __init__(self, monitor, path="./persistent_chroma_db"):
+        self.monitor = monitor
         self.embedding_function = embedding_functions.SentenceTransformerEmbeddingFunction(
             model_name="all-MiniLM-L6-v2"
         )
+        self.monitor.publish(objective="loaded embedding model...", module="LOG (Vector Scoring)")
+        self.client = chromadb.HttpClient(host="localhost", port='8000',
+                                          settings=Settings(allow_reset=True, anonymized_telemetry=False))
+        self.monitor.publish(objective="Persistent memory fetched...", module="LOG (Vector Scoring)")
 
-        self.client = chromadb.PersistentClient(path=path)
+
 
         try:
             self.collection = self.client.get_collection(
                 name="CategoryBags",
             )
-            print(f"Loaded existing collection with {self.collection.count()} entries")
+            self.monitor.publish(objective=f"Loaded existing collection with {self.collection.count()} entries...",
+                                 module="LOG (Vector Scoring)")
+            print(f"Loaded existing collection with {self.collection.count()} entries...")
         except ValueError:
             raise ValueError("The collection 'CategoryBags' does not exist. Please ensure it is loaded first.")
 
@@ -55,34 +61,33 @@ class VectorBasedScoringSystem:
                 final_scores[category] = 0.0
 
         # Return the scores without sorting
+        # self.monitor.publish(objective="Returned Score...", module="LOG (Vector Scoring)")
         return final_scores
 
-
-
-# Example usage
-if __name__ == "__main__":
-    try:
-        system = VectorBasedScoringSystem()
-
-        test_text = """I see it it's in front of me, clear and loud
-Is it open as the sky or grey as a cloud
-It's the feeling I hold, I hold beyond control
-Do I love her? Is the question, upon I stroll
-when its me thinking she might be the one I lost
-But I didn't love her right?
-We were not together under the same days of frost
-Then why is it so it affects me to the deepest in the days and darkest at the night?
-It's ok my eyes say, It's just overthinking says the brain
-My heart doubts the line of love and obsession
-As I sit and watch the rain
-"""
-
-        results = system.score_text_by_vectors(test_text)
-        print(json.dumps(results, indent=4))
-        # print(f"\nFor the Text:{test_text}")
-        # print("\nSimilarity Scores (Percentage):")
-        # for category, score in results.items():
-        #     print(f"{category}: {score}%")
-
-    except Exception as e:
-        print(f"Error: {e}")
+# # Example usage
+# if __name__ == "__main__":
+#     try:
+#         system = VectorBasedScoringSystem()
+#
+#         test_text = """I see it it's in front of me, clear and loud
+# Is it open as the sky or grey as a cloud
+# It's the feeling I hold, I hold beyond control
+# Do I love her? Is the question, upon I stroll
+# when its me thinking she might be the one I lost
+# But I didn't love her right?
+# We were not together under the same days of frost
+# Then why is it so it affects me to the deepest in the days and darkest at the night?
+# It's ok my eyes say, It's just overthinking says the brain
+# My heart doubts the line of love and obsession
+# As I sit and watch the rain
+# """
+#
+#         results = system.score_text_by_vectors(test_text)
+#         print(json.dumps(results, indent=4))
+#         # print(f"\nFor the Text:{test_text}")
+#         # print("\nSimilarity Scores (Percentage):")
+#         # for category, score in results.items():
+#         #     print(f"{category}: {score}%")
+#
+#     except Exception as e:
+#         print(f"Error: {e}")

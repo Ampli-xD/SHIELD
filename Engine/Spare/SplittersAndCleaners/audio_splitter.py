@@ -1,5 +1,7 @@
 import os
+
 from pydub import AudioSegment
+
 
 class AudioData:
     def __init__(self, audio_path, serial_number, event):

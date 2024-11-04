@@ -4,7 +4,8 @@ from groq import Groq
 
 
 class ImageProcessor:
-    def __init__(self, api_key):
+    def __init__(self, api_key, monitor):
+        self.monitor = monitor
         self.image_data = None
         self.client = Groq(api_key=api_key)
 
@@ -41,7 +42,7 @@ class ImageProcessor:
 
             response_content = chat_completion.choices[0].message.content
             self.update_context(response_content)
-
+            self.monitor.publish(objective="Fetched Image analysis...", module="LOG (ImageProcessor)")
         except Exception as e:
             print(f"Error during image analysis: {e}")
 

@@ -58,7 +58,7 @@ class VideoData(BaseData):
 
     def set_context(self, text):
         try:
-            super().context = text
+            self.context = text
             return True
         except Exception as e:
             print(f"Error setting context: {e}")

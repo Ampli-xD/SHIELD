@@ -4,9 +4,9 @@ from Runner.Monitor.PubSub import Publisher
 
 
 class VectorScoring:
-    def __init__(self, path):
-        self.publisher = Publisher(module="Vector Scoring Module")
-        self.vec_score_sys = VectorBasedScoringSystem(path=path)
+    def __init__(self, path, monitor: Publisher):
+        self.monitor = monitor
+        self.vec_score_sys = VectorBasedScoringSystem(monitor, path=path)
         self.final_json = []
 
     def get_vector_scores(self, event: EventData):
@@ -22,7 +22,7 @@ class VectorScoring:
                 "serial_id": data_serial_id,
                 "score": data_object_score
             }
-            self.publisher.publish(objective=f"scored id {data_serial_id}", module="VectorScoring", data=data_set)
+            self.monitor.publish(objective=f"Scored, ID {data_serial_id}", module="Vector Scoring", data=data_set)
             self.final_json.append(data_set)
 
         combine_text_results = self.vec_score_sys.score_text_by_vectors(overall)

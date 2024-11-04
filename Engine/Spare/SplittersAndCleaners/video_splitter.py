@@ -1,5 +1,7 @@
-import cv2
 import os
+
+import cv2
+
 
 # Define the VideoData class
 class VideoData:

@@ -2,12 +2,14 @@ from groq import Groq
 
 
 class AudioProcessor:
-    def __init__(self, api_key):
+    def __init__(self, api_key, monitor):
+        self.monitor = monitor
         self.audio_data = None
         self.client = Groq(api_key=api_key)
 
     def fetch_audio_transcription(self, audio_data_object, model="whisper-large-v3-turbo", prompt="", language="en",
                                   temperature=0.0):
+
         self.audio_data = audio_data_object
         try:
             transcription = self.client.audio.transcriptions.create(
@@ -21,7 +23,7 @@ class AudioProcessor:
             )
             response_text = transcription.text
             self.update_context(response_text)
-
+            self.monitor.publish(objective="Fetched Audio analysis...", module="LOG (AudioProcessor)")
         except Exception as e:
             print(f"Error during audio transcription: {e}")
 

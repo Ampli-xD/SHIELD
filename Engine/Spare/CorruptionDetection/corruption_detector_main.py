@@ -1,3 +1,4 @@
+from Engine.DataObjects.Base import BaseData
 from audio_corruption_detector import AudioCorruptionDetector
 from image_corruption_detector import ImageCorruptionDetector
 from text_corruption_detector import TextCorruptionDetector
@@ -29,8 +30,8 @@ class CorruptionDetector:
             if not self.video_detector.check_integrity(data_object):
                 self.mark_corrupted(data_object)
 
-    def mark_corrupted(self, data_object):
-        data_object.corrupted = True
+    def mark_corrupted(self, data_object: BaseData):
+        data_object.set_corrupted()
         self.corrupted_items.append(data_object)
 
     def process_all(self):
@@ -39,8 +40,8 @@ class CorruptionDetector:
             self.is_corrupted(data_object)
         return self.corrupted_items
 
-    def convert_text(self, text_data):
-        return self.text_detector.convert_text_to_upper(text_data)
+    # def convert_text(self, text_data):
+    #     return self.text_detector.convert_text_to_upper(text_data)
 
     def convert_image(self, image_data, output_format='PNG'):
         return self.image_detector.convert_format(image_data, output_format)

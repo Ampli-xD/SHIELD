@@ -5,10 +5,10 @@ from Runner.Monitor.PubSub import Publisher
 
 
 class LLMScoring:
-    def __init__(self, api_key):
+    def __init__(self, api_key, monitor: Publisher):
         self.llm_generator = LLMGenerator(api_key)
         self.final_json = []
-        self.monitor = Publisher(module="LLM Scoring Module")
+        self.monitor = monitor
 
     def get_llm_scores(self, event: EventData):
         self.final_json = []
@@ -24,7 +24,7 @@ class LLMScoring:
                 "serial_id": data_serial_id,
                 "score": data_object_score
             }
-            self.publisher.publish(objective=f"scored id {data_serial_id}", module="VectorScoring", data=data_set)
+            self.monitor.publish(objective=f"Scored, ID {data_serial_id}", module="LLM Scoring", data=data_set)
             self.final_json.append(data_set)
 
         combine_text_results = self.llm_generator.score_text_by_llm(overall, system_prompt=SingleAnalysisPrompt)

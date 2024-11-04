@@ -3,14 +3,23 @@ from datetime import datetime
 
 import zmq
 
+log_port = 5555
+
 
 class Publisher:
-    def __init__(self, port=5555, module=""):
+    def __init__(self, port=log_port):
         self.context = zmq.Context()
         self.socket = self.context.socket(zmq.PUB)
         self.address = f"tcp://*:{port}"
         self.socket.bind(self.address)
-        self.socket.send(f"Publisher initialized at {module if module != '' else '<uknown>'} on port {port}")
+        data_to_send = {
+            "timestamp": datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
+            "objective": "MONITOR LOG",
+            "module": "PubSub",
+            "data": {".": f"Publisher initialized on port {port}"},
+            "extra": ""
+        }
+        self.socket.send(json.dumps(data_to_send).encode('utf-8'))
 
     def publish(self, timestamp=datetime.now().strftime('%Y-%m-%d %H:%M:%S'), objective="log", module="", data="",
                 extra=""):
@@ -37,7 +46,7 @@ class Publisher:
 
 
 class Subscriber:
-    def __init__(self, port=5555):
+    def __init__(self, port=log_port):
         self.context = zmq.Context()
         self.socket = self.context.socket(zmq.SUB)
         self.socket.connect(f"tcp://localhost:{port}")
