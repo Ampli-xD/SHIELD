@@ -1,0 +1,32 @@
+{
+	"nodes":[
+		{"id":"021311d49be7af16","type":"text","text":"","x":-660,"y":-440,"width":1320,"height":880},
+		{"id":"a16570d9137e1445","type":"text","text":"# status","x":100,"y":-180,"width":240,"height":60},
+		{"id":"4c94f645de3e83ae","type":"text","text":"# <center>START/STOP</center>","x":360,"y":-260,"width":240,"height":60},
+		{"id":"b6ac3df8400fb220","type":"text","text":"# <center>START/STOP</center>","x":360,"y":-180,"width":240,"height":60},
+		{"id":"4e217f4ea631c68c","type":"text","text":"# status","x":100,"y":-100,"width":240,"height":60},
+		{"id":"d9526d7252759421","type":"text","text":"# status","x":100,"y":-20,"width":240,"height":60},
+		{"id":"d79418cf7719a8f2","type":"text","text":"# <center>START/STOP</center>","x":360,"y":-100,"width":240,"height":60},
+		{"id":"4a419f738430f1b5","type":"text","text":"# <center>START/STOP</center>","x":360,"y":-20,"width":240,"height":60},
+		{"id":"1910a09e1a161b9e","type":"text","text":"Name of module","x":-600,"y":60,"width":680,"height":60},
+		{"id":"4eba998f7ae76707","type":"text","text":"# status","x":100,"y":60,"width":240,"height":60},
+		{"id":"d9f44160dbe09e92","type":"text","text":"# <center>START/STOP</center>","x":360,"y":60,"width":240,"height":60},
+		{"id":"88fa0e104833316a","type":"text","text":"Name of module","x":-600,"y":140,"width":680,"height":60},
+		{"id":"fafc061cfe71eaa7","type":"text","text":"# status","x":100,"y":140,"width":240,"height":60},
+		{"id":"3ace68f567cea13f","type":"text","text":"# <center>START/STOP</center>","x":360,"y":140,"width":240,"height":60},
+		{"id":"95f7ed87c2d7b885","type":"text","text":"Name of module","x":-600,"y":220,"width":680,"height":60},
+		{"id":"bdbeaad790405765","type":"text","text":"# status","x":100,"y":220,"width":240,"height":60},
+		{"id":"73c244e49c5e2f92","type":"text","text":"# <center>START/STOP</center>","x":360,"y":220,"width":240,"height":60},
+		{"id":"da6804c533da1cf6","type":"text","text":"Name of module","x":-600,"y":300,"width":680,"height":60},
+		{"id":"3da0b274ce9fd48a","type":"text","text":"# <center>START/STOP</center>","x":360,"y":300,"width":240,"height":60},
+		{"id":"b37770da5902881a","type":"text","text":"# status","x":100,"y":300,"width":240,"height":60},
+		{"id":"7b7ad77654143d4c","type":"text","text":"Name of module","x":-600,"y":-260,"width":680,"height":60},
+		{"id":"fcc7a76175246edd","type":"text","text":"Name of module","x":-600,"y":-180,"width":680,"height":60},
+		{"id":"dbef3799a36a59b9","type":"text","text":"Name of module","x":-600,"y":-100,"width":680,"height":60},
+		{"id":"c958f8d778075a4f","type":"text","text":"Name of module","x":-600,"y":-20,"width":680,"height":60},
+		{"id":"5c56e7e2989516d5","type":"text","text":"# status","x":100,"y":-260,"width":240,"height":60},
+		{"id":"71009692a117629e","type":"text","text":"# <center>Automatic Start","x":-600,"y":-360,"width":580,"height":60},
+		{"id":"8c63439272f46b5f","type":"text","text":"# <center>Manual Start","x":20,"y":-360,"width":580,"height":60}
+	],
+	"edges":[]
+}

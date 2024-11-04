@@ -1,0 +1,582 @@
+[33mWARNING[0m:  [03-11-2024 19:24:40] chroma_server_nofile is not supported on Windows. chroma_server_nofile will not be set.
+[32mINFO[0m:     [03-11-2024 19:24:41] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[36mDEBUG[0m:    [03-11-2024 19:24:41] Starting component System
+[36mDEBUG[0m:    [03-11-2024 19:24:41] Starting component OpenTelemetryClient
+[36mDEBUG[0m:    [03-11-2024 19:24:41] Starting component SqliteDB
+[36mDEBUG[0m:    [03-11-2024 19:24:41] Starting component QuotaEnforcer
+[36mDEBUG[0m:    [03-11-2024 19:24:41] Starting component Posthog
+[36mDEBUG[0m:    [03-11-2024 19:24:41] Starting component SimpleRateLimitEnforcer
+[36mDEBUG[0m:    [03-11-2024 19:24:41] Starting component LocalSegmentManager
+[36mDEBUG[0m:    [03-11-2024 19:24:41] Starting component LocalExecutor
+[36mDEBUG[0m:    [03-11-2024 19:24:41] Starting component SegmentAPI
+[32mINFO[0m:     [03-11-2024 19:24:41] Started server process [[36m19012[0m]
+[32mINFO[0m:     [03-11-2024 19:24:41] Waiting for application startup.
+[32mINFO[0m:     [03-11-2024 19:24:41] Application startup complete.
+[32mINFO[0m:     [03-11-2024 19:24:41] Uvicorn running on [1mhttp://localhost:8000[0m (Press CTRL+C to quit)
+[32mINFO[0m:     [03-11-2024 19:27:18] ::1:55926 - "GET / HTTP/1.1" 404
+[32mINFO[0m:     [03-11-2024 19:27:18] ::1:55926 - "GET /favicon.ico HTTP/1.1" 404
+[32mINFO[0m:     [03-11-2024 19:29:44] Shutting down
+[32mINFO[0m:     [03-11-2024 19:29:44] Waiting for application shutdown.
+[36mDEBUG[0m:    [03-11-2024 19:29:44] Stopping component System
+[36mDEBUG[0m:    [03-11-2024 19:29:44] Stopping component SegmentAPI
+[36mDEBUG[0m:    [03-11-2024 19:29:44] Stopping component LocalExecutor
+[36mDEBUG[0m:    [03-11-2024 19:29:44] Stopping component LocalSegmentManager
+[36mDEBUG[0m:    [03-11-2024 19:29:44] Stopping component SimpleRateLimitEnforcer
+[36mDEBUG[0m:    [03-11-2024 19:29:44] Stopping component Posthog
+[36mDEBUG[0m:    [03-11-2024 19:29:44] Stopping component QuotaEnforcer
+[36mDEBUG[0m:    [03-11-2024 19:29:44] Stopping component SqliteDB
+[36mDEBUG[0m:    [03-11-2024 19:29:44] Stopping component OpenTelemetryClient
+[32mINFO[0m:     [03-11-2024 19:29:45] Application shutdown complete.
+[32mINFO[0m:     [03-11-2024 19:29:45] Finished server process [[36m19012[0m]
+[33mWARNING[0m:  [03-11-2024 19:55:38] chroma_server_nofile is not supported on Windows. chroma_server_nofile will not be set.
+[32mINFO[0m:     [03-11-2024 19:55:38] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[36mDEBUG[0m:    [03-11-2024 19:55:38] Starting component System
+[36mDEBUG[0m:    [03-11-2024 19:55:38] Starting component OpenTelemetryClient
+[36mDEBUG[0m:    [03-11-2024 19:55:38] Starting component SqliteDB
+[36mDEBUG[0m:    [03-11-2024 19:55:38] Starting component SimpleQuotaEnforcer
+[36mDEBUG[0m:    [03-11-2024 19:55:38] Starting component Posthog
+[36mDEBUG[0m:    [03-11-2024 19:55:38] Starting component SimpleRateLimitEnforcer
+[36mDEBUG[0m:    [03-11-2024 19:55:38] Starting component LocalSegmentManager
+[36mDEBUG[0m:    [03-11-2024 19:55:38] Starting component LocalExecutor
+[36mDEBUG[0m:    [03-11-2024 19:55:38] Starting component SegmentAPI
+[32mINFO[0m:     [03-11-2024 19:55:39] Started server process [[36m15228[0m]
+[32mINFO[0m:     [03-11-2024 19:55:39] Waiting for application startup.
+[32mINFO[0m:     [03-11-2024 19:55:39] Application startup complete.
+[32mINFO[0m:     [03-11-2024 19:55:39] Uvicorn running on [1mhttp://localhost:8000[0m (Press CTRL+C to quit)
+[32mINFO[0m:     [03-11-2024 20:41:49] Shutting down
+[32mINFO[0m:     [03-11-2024 20:41:50] Waiting for application shutdown.
+[36mDEBUG[0m:    [03-11-2024 20:41:50] Stopping component System
+[36mDEBUG[0m:    [03-11-2024 20:41:50] Stopping component SegmentAPI
+[36mDEBUG[0m:    [03-11-2024 20:41:50] Stopping component LocalExecutor
+[36mDEBUG[0m:    [03-11-2024 20:41:50] Stopping component LocalSegmentManager
+[36mDEBUG[0m:    [03-11-2024 20:41:50] Stopping component SimpleRateLimitEnforcer
+[36mDEBUG[0m:    [03-11-2024 20:41:50] Stopping component Posthog
+[36mDEBUG[0m:    [03-11-2024 20:41:50] Stopping component SimpleQuotaEnforcer
+[36mDEBUG[0m:    [03-11-2024 20:41:50] Stopping component SqliteDB
+[36mDEBUG[0m:    [03-11-2024 20:41:50] Stopping component OpenTelemetryClient
+[32mINFO[0m:     [03-11-2024 20:41:50] Application shutdown complete.
+[32mINFO[0m:     [03-11-2024 20:41:50] Finished server process [[36m15228[0m]
+[33mWARNING[0m:  [03-11-2024 20:47:47] chroma_server_nofile is not supported on Windows. chroma_server_nofile will not be set.
+[32mINFO[0m:     [03-11-2024 20:47:48] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[36mDEBUG[0m:    [03-11-2024 20:47:48] Starting component System
+[36mDEBUG[0m:    [03-11-2024 20:47:48] Starting component OpenTelemetryClient
+[36mDEBUG[0m:    [03-11-2024 20:47:48] Starting component SimpleAssignmentPolicy
+[36mDEBUG[0m:    [03-11-2024 20:47:48] Starting component SqliteDB
+[36mDEBUG[0m:    [03-11-2024 20:47:48] Starting component Posthog
+[36mDEBUG[0m:    [03-11-2024 20:47:48] Starting component LocalSegmentManager
+[36mDEBUG[0m:    [03-11-2024 20:47:48] Starting component SegmentAPI
+[32mINFO[0m:     [03-11-2024 20:47:48] Started server process [[36m4384[0m]
+[32mINFO[0m:     [03-11-2024 20:47:48] Waiting for application startup.
+[32mINFO[0m:     [03-11-2024 20:47:48] Application startup complete.
+[32mINFO[0m:     [03-11-2024 20:47:48] Uvicorn running on [1mhttp://localhost:8000[0m (Press CTRL+C to quit)
+[32mINFO[0m:     [03-11-2024 20:50:50] ::1:59909 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 20:50:50] ::1:59909 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[31mERROR[0m:    [03-11-2024 20:50:50] no such column: collections.topic
+Traceback (most recent call last):
+  File "C:\Users\disha\IdeaProjects\MiniProject\venv\lib\site-packages\anyio\streams\memory.py", line 111, in receive
+    return self.receive_nowait()
+  File "C:\Users\disha\IdeaProjects\MiniProject\venv\lib\site-packages\anyio\streams\memory.py", line 106, in receive_nowait
+    raise WouldBlock
+anyio.WouldBlock
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\disha\IdeaProjects\MiniProject\venv\lib\site-packages\anyio\streams\memory.py", line 124, in receive
+    return receiver.item
+AttributeError: 'MemoryObjectItemReceiver' object has no attribute 'item'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\disha\IdeaProjects\MiniProject\venv\lib\site-packages\starlette\middleware\base.py", line 157, in call_next
+    message = await recv_stream.receive()
+  File "C:\Users\disha\IdeaProjects\MiniProject\venv\lib\site-packages\anyio\streams\memory.py", line 126, in receive
+    raise EndOfStream
+anyio.EndOfStream
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\disha\IdeaProjects\MiniProject\venv\lib\site-packages\chromadb\server\fastapi\__init__.py", line 80, in catch_exceptions_middleware
+    return await call_next(request)
+  File "C:\Users\disha\IdeaProjects\MiniProject\venv\lib\site-packages\starlette\middleware\base.py", line 163, in call_next
+    raise app_exc
+  File "C:\Users\disha\IdeaProjects\MiniProject\venv\lib\site-packages\starlette\middleware\base.py", line 149, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Users\disha\IdeaProjects\MiniProject\venv\lib\site-packages\starlette\middleware\exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\disha\IdeaProjects\MiniProject\venv\lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\disha\IdeaProjects\MiniProject\venv\lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\disha\IdeaProjects\MiniProject\venv\lib\site-packages\starlette\routing.py", line 715, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\disha\IdeaProjects\MiniProject\venv\lib\site-packages\starlette\routing.py", line 735, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\disha\IdeaProjects\MiniProject\venv\lib\site-packages\starlette\routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\disha\IdeaProjects\MiniProject\venv\lib\site-packages\starlette\routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\disha\IdeaProjects\MiniProject\venv\lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\disha\IdeaProjects\MiniProject\venv\lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\disha\IdeaProjects\MiniProject\venv\lib\site-packages\starlette\routing.py", line 73, in app
+    response = await f(request)
+  File "C:\Users\disha\IdeaProjects\MiniProject\venv\lib\site-packages\fastapi\routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Users\disha\IdeaProjects\MiniProject\venv\lib\site-packages\fastapi\routing.py", line 214, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "C:\Users\disha\IdeaProjects\MiniProject\venv\lib\site-packages\starlette\concurrency.py", line 39, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "C:\Users\disha\IdeaProjects\MiniProject\venv\lib\site-packages\anyio\to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+  File "C:\Users\disha\IdeaProjects\MiniProject\venv\lib\site-packages\anyio\_backends\_asyncio.py", line 2405, in run_sync_in_worker_thread
+    return await future
+  File "C:\Users\disha\IdeaProjects\MiniProject\venv\lib\site-packages\anyio\_backends\_asyncio.py", line 914, in run
+    result = context.run(func, *args)
+  File "C:\Users\disha\IdeaProjects\MiniProject\venv\lib\site-packages\chromadb\telemetry\opentelemetry\__init__.py", line 127, in wrapper
+    return f(*args, **kwargs)
+  File "C:\Users\disha\IdeaProjects\MiniProject\venv\lib\site-packages\chromadb\auth\fastapi.py", line 206, in wrapped
+    return f(*args, **kwargs)
+  File "C:\Users\disha\IdeaProjects\MiniProject\venv\lib\site-packages\chromadb\server\fastapi\__init__.py", line 392, in get_collection
+    return self._api.get_collection(
+  File "C:\Users\disha\IdeaProjects\MiniProject\venv\lib\site-packages\chromadb\telemetry\opentelemetry\__init__.py", line 127, in wrapper
+    return f(*args, **kwargs)
+  File "C:\Users\disha\IdeaProjects\MiniProject\venv\lib\site-packages\chromadb\api\segment.py", line 244, in get_collection
+    existing = self._sysdb.get_collections(
+  File "C:\Users\disha\IdeaProjects\MiniProject\venv\lib\site-packages\chromadb\telemetry\opentelemetry\__init__.py", line 127, in wrapper
+    return f(*args, **kwargs)
+  File "C:\Users\disha\IdeaProjects\MiniProject\venv\lib\site-packages\chromadb\db\mixins\sysdb.py", line 432, in get_collections
+    rows = cur.execute(sql, params).fetchall()
+sqlite3.OperationalError: no such column: collections.topic
+[32mINFO[0m:     [03-11-2024 20:50:50] ::1:59909 - "GET /api/v1/collections/CategoryBags?tenant=default_tenant&database=default_database HTTP/1.1" 500
+[32mINFO[0m:     [03-11-2024 21:28:42] Shutting down
+[32mINFO[0m:     [03-11-2024 21:28:43] Waiting for application shutdown.
+[32mINFO[0m:     [03-11-2024 21:28:43] Application shutdown complete.
+[32mINFO[0m:     [03-11-2024 21:28:43] Finished server process [[36m4384[0m]
+[33mWARNING[0m:  [03-11-2024 21:29:55] chroma_server_nofile is not supported on Windows. chroma_server_nofile will not be set.
+[32mINFO[0m:     [03-11-2024 21:29:55] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[36mDEBUG[0m:    [03-11-2024 21:29:55] Starting component System
+[36mDEBUG[0m:    [03-11-2024 21:29:55] Starting component OpenTelemetryClient
+[36mDEBUG[0m:    [03-11-2024 21:29:55] Starting component SimpleAssignmentPolicy
+[36mDEBUG[0m:    [03-11-2024 21:29:55] Starting component SqliteDB
+[36mDEBUG[0m:    [03-11-2024 21:29:55] Starting component Posthog
+[36mDEBUG[0m:    [03-11-2024 21:29:55] Starting component LocalSegmentManager
+[36mDEBUG[0m:    [03-11-2024 21:29:55] Starting component SegmentAPI
+[32mINFO[0m:     [03-11-2024 21:29:55] Started server process [[36m9556[0m]
+[32mINFO[0m:     [03-11-2024 21:29:55] Waiting for application startup.
+[32mINFO[0m:     [03-11-2024 21:29:56] Application startup complete.
+[32mINFO[0m:     [03-11-2024 21:29:56] Uvicorn running on [1mhttp://localhost:8000[0m (Press CTRL+C to quit)
+[32mINFO[0m:     [03-11-2024 21:30:58] ::1:49527 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 21:30:59] ::1:49527 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 21:30:59] ::1:49527 - "GET /api/v1/collections/CategoryBags?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 21:30:59] ::1:49527 - "GET /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/count HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 21:30:59] ::1:49527 - "GET /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/count HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 21:30:59] ::1:49527 - "GET /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/count HTTP/1.1" 200
+[36mDEBUG[0m:    [03-11-2024 21:30:59] Starting component PersistentLocalHnswSegment
+[32mINFO[0m:     [03-11-2024 21:31:00] ::1:49527 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/query HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 21:31:00] ::1:49527 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/get HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 21:31:00] Backing off send_request(...) for 0.4s (requests.exceptions.ConnectionError: HTTPSConnectionPool(host='us.i.posthog.com', port=443): Max retries exceeded with url: /batch/ (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024A74A72F50>: Failed to resolve 'us.i.posthog.com' ([Errno 11001] getaddrinfo failed)")))
+[32mINFO[0m:     [03-11-2024 21:31:00] Backing off send_request(...) for 0.1s (requests.exceptions.ConnectionError: HTTPSConnectionPool(host='us.i.posthog.com', port=443): Max retries exceeded with url: /batch/ (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024A74A738B0>: Failed to resolve 'us.i.posthog.com' ([Errno 11001] getaddrinfo failed)")))
+[32mINFO[0m:     [03-11-2024 21:31:01] Backing off send_request(...) for 3.6s (requests.exceptions.ConnectionError: HTTPSConnectionPool(host='us.i.posthog.com', port=443): Max retries exceeded with url: /batch/ (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024A74A326E0>: Failed to resolve 'us.i.posthog.com' ([Errno 11001] getaddrinfo failed)")))
+[31mERROR[0m:    [03-11-2024 21:31:04] Giving up send_request(...) after 4 tries (requests.exceptions.ConnectionError: HTTPSConnectionPool(host='us.i.posthog.com', port=443): Max retries exceeded with url: /batch/ (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024A74A314E0>: Failed to resolve 'us.i.posthog.com' ([Errno 11001] getaddrinfo failed)")))
+[32mINFO[0m:     [03-11-2024 21:35:20] ::1:49840 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 21:35:20] ::1:49840 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 21:35:20] ::1:49840 - "GET /api/v1/collections/CategoryBags?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 21:35:20] ::1:49840 - "GET /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/count HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 21:35:20] ::1:49840 - "GET /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/count HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 21:35:20] ::1:49840 - "GET /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/count HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 21:35:21] ::1:49840 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/query HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 21:35:22] ::1:49840 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/get HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 21:35:22] ::1:49840 - "GET /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/count HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 21:35:22] ::1:49840 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/query HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 21:35:22] ::1:49840 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/get HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 21:35:22] ::1:49840 - "GET /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/count HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 21:35:22] ::1:49840 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/query HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 21:35:22] ::1:49840 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/get HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 21:35:22] ::1:49840 - "GET /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/count HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 21:35:22] ::1:49840 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/query HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 21:35:22] ::1:49840 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/get HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 21:35:23] ::1:49840 - "GET /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/count HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 21:35:23] ::1:49840 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/query HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 21:35:23] ::1:49840 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/get HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 21:35:23] ::1:49840 - "GET /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/count HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 21:35:23] ::1:49840 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/query HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 21:35:23] ::1:49840 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/get HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 22:05:52] ::1:52924 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 22:05:52] ::1:52924 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 22:05:52] ::1:52924 - "GET /api/v1/collections/CategoryBags?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 22:05:52] ::1:52924 - "GET /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/count HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 22:05:52] ::1:52924 - "GET /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/count HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 22:05:52] ::1:52924 - "GET /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/count HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 22:05:52] ::1:52924 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/query HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 22:05:53] ::1:52924 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/get HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 22:05:53] ::1:52924 - "GET /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/count HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 22:05:53] ::1:52924 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/query HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 22:05:53] ::1:52924 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/get HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 22:05:53] ::1:52924 - "GET /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/count HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 22:05:53] ::1:52924 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/query HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 22:05:54] ::1:52924 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/get HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 22:05:54] ::1:52924 - "GET /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/count HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 22:05:54] ::1:52924 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/query HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 22:05:55] ::1:52924 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/get HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 22:05:55] ::1:52924 - "GET /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/count HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 22:05:55] ::1:52924 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/query HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 22:05:55] ::1:52924 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/get HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 22:05:55] ::1:52924 - "GET /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/count HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 22:05:55] ::1:52924 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/query HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 22:05:55] ::1:52924 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/get HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 22:07:17] Shutting down
+[32mINFO[0m:     [03-11-2024 22:07:17] Waiting for application shutdown.
+[32mINFO[0m:     [03-11-2024 22:07:17] Application shutdown complete.
+[32mINFO[0m:     [03-11-2024 22:07:17] Finished server process [[36m9556[0m]
+[33mWARNING[0m:  [03-11-2024 22:07:44] chroma_server_nofile is not supported on Windows. chroma_server_nofile will not be set.
+[32mINFO[0m:     [03-11-2024 22:07:45] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[36mDEBUG[0m:    [03-11-2024 22:07:45] Starting component System
+[36mDEBUG[0m:    [03-11-2024 22:07:45] Starting component OpenTelemetryClient
+[36mDEBUG[0m:    [03-11-2024 22:07:45] Starting component SimpleAssignmentPolicy
+[36mDEBUG[0m:    [03-11-2024 22:07:45] Starting component SqliteDB
+[36mDEBUG[0m:    [03-11-2024 22:07:45] Starting component Posthog
+[36mDEBUG[0m:    [03-11-2024 22:07:45] Starting component LocalSegmentManager
+[36mDEBUG[0m:    [03-11-2024 22:07:45] Starting component SegmentAPI
+[32mINFO[0m:     [03-11-2024 22:07:45] Started server process [[36m2776[0m]
+[32mINFO[0m:     [03-11-2024 22:07:45] Waiting for application startup.
+[32mINFO[0m:     [03-11-2024 22:07:45] Application startup complete.
+[32mINFO[0m:     [03-11-2024 22:07:45] Uvicorn running on [1mhttp://localhost:8000[0m (Press CTRL+C to quit)
+[32mINFO[0m:     [03-11-2024 22:11:30] ::1:53235 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 22:11:30] ::1:53235 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 22:11:30] ::1:53235 - "GET /api/v1/collections/CategoryBags?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 22:11:30] ::1:53235 - "GET /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/count HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 22:11:30] ::1:53235 - "GET /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/count HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 22:11:30] ::1:53235 - "GET /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/count HTTP/1.1" 200
+[36mDEBUG[0m:    [03-11-2024 22:11:31] Starting component PersistentLocalHnswSegment
+[32mINFO[0m:     [03-11-2024 22:11:31] ::1:53235 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/query HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 22:11:31] ::1:53235 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/get HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 22:11:31] ::1:53235 - "GET /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/count HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 22:11:31] ::1:53235 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/query HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 22:11:32] ::1:53235 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/get HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 22:11:32] ::1:53235 - "GET /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/count HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 22:11:32] ::1:53235 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/query HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 22:11:32] ::1:53235 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/get HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 22:11:32] ::1:53235 - "GET /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/count HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 22:11:32] ::1:53235 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/query HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 22:11:32] ::1:53235 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/get HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 22:11:32] ::1:53235 - "GET /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/count HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 22:11:32] ::1:53235 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/query HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 22:11:32] ::1:53235 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/get HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 22:11:32] ::1:53235 - "GET /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/count HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 22:11:32] ::1:53235 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/query HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 22:11:33] ::1:53235 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/get HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 22:14:04] Shutting down
+[32mINFO[0m:     [03-11-2024 22:14:04] Waiting for application shutdown.
+[32mINFO[0m:     [03-11-2024 22:14:04] Application shutdown complete.
+[32mINFO[0m:     [03-11-2024 22:14:04] Finished server process [[36m2776[0m]
+[33mWARNING[0m:  [03-11-2024 22:24:52] chroma_server_nofile is not supported on Windows. chroma_server_nofile will not be set.
+[32mINFO[0m:     [03-11-2024 22:24:52] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[36mDEBUG[0m:    [03-11-2024 22:24:52] Starting component System
+[36mDEBUG[0m:    [03-11-2024 22:24:52] Starting component OpenTelemetryClient
+[36mDEBUG[0m:    [03-11-2024 22:24:52] Starting component SimpleAssignmentPolicy
+[36mDEBUG[0m:    [03-11-2024 22:24:52] Starting component SqliteDB
+[36mDEBUG[0m:    [03-11-2024 22:24:52] Starting component Posthog
+[36mDEBUG[0m:    [03-11-2024 22:24:52] Starting component LocalSegmentManager
+[36mDEBUG[0m:    [03-11-2024 22:24:52] Starting component SegmentAPI
+[32mINFO[0m:     [03-11-2024 22:24:53] Started server process [[36m18916[0m]
+[32mINFO[0m:     [03-11-2024 22:24:53] Waiting for application startup.
+[32mINFO[0m:     [03-11-2024 22:24:53] Application startup complete.
+[32mINFO[0m:     [03-11-2024 22:24:53] Uvicorn running on [1mhttp://localhost:8000[0m (Press CTRL+C to quit)
+[32mINFO[0m:     [03-11-2024 22:26:30] ::1:53744 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 22:26:30] ::1:53744 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 22:26:30] ::1:53744 - "GET /api/v1/collections/CategoryBags?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 22:26:30] ::1:53744 - "GET /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/count HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 22:26:30] ::1:53744 - "GET /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/count HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 22:26:30] ::1:53744 - "GET /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/count HTTP/1.1" 200
+[36mDEBUG[0m:    [03-11-2024 22:26:32] Starting component PersistentLocalHnswSegment
+[32mINFO[0m:     [03-11-2024 22:26:33] ::1:53744 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/query HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 22:26:33] ::1:53744 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/get HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 22:26:33] ::1:53744 - "GET /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/count HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 22:26:33] ::1:53744 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/query HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 22:26:34] ::1:53744 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/get HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 22:26:34] ::1:53744 - "GET /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/count HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 22:26:34] ::1:53744 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/query HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 22:26:34] ::1:53744 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/get HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 22:26:34] ::1:53744 - "GET /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/count HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 22:26:34] ::1:53744 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/query HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 22:26:35] ::1:53744 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/get HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 22:26:35] ::1:53744 - "GET /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/count HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 22:26:35] ::1:53744 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/query HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 22:26:35] ::1:53744 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/get HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 22:26:35] ::1:53744 - "GET /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/count HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 22:26:36] ::1:53744 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/query HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 22:26:36] ::1:53744 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/get HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 22:29:26] ::1:53861 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 22:29:26] ::1:53861 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 22:29:26] ::1:53861 - "GET /api/v1/collections/CategoryBags?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 22:29:26] ::1:53861 - "GET /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/count HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 22:29:26] ::1:53861 - "GET /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/count HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 22:29:26] ::1:53861 - "GET /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/count HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 22:29:26] ::1:53861 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/query HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 22:29:27] ::1:53861 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/get HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 22:29:27] ::1:53861 - "GET /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/count HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 22:29:27] ::1:53861 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/query HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 22:29:27] ::1:53861 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/get HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 22:29:27] ::1:53861 - "GET /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/count HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 22:29:27] ::1:53861 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/query HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 22:29:28] ::1:53861 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/get HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 22:29:28] ::1:53861 - "GET /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/count HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 22:29:28] ::1:53861 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/query HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 22:29:29] ::1:53861 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/get HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 22:29:29] ::1:53861 - "GET /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/count HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 22:29:29] ::1:53861 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/query HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 22:29:30] ::1:53861 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/get HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 22:29:30] ::1:53861 - "GET /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/count HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 22:29:30] ::1:53861 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/query HTTP/1.1" 200
+[32mINFO[0m:     [03-11-2024 22:29:31] ::1:53861 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/get HTTP/1.1" 200
+[33mWARNING[0m:  [04-11-2024 11:04:11] chroma_server_nofile is not supported on Windows. chroma_server_nofile will not be set.
+[32mINFO[0m:     [04-11-2024 11:04:11] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[36mDEBUG[0m:    [04-11-2024 11:04:11] Starting component System
+[36mDEBUG[0m:    [04-11-2024 11:04:11] Starting component OpenTelemetryClient
+[36mDEBUG[0m:    [04-11-2024 11:04:11] Starting component SimpleAssignmentPolicy
+[36mDEBUG[0m:    [04-11-2024 11:04:11] Starting component SqliteDB
+[36mDEBUG[0m:    [04-11-2024 11:04:11] Starting component Posthog
+[36mDEBUG[0m:    [04-11-2024 11:04:11] Starting component LocalSegmentManager
+[36mDEBUG[0m:    [04-11-2024 11:04:11] Starting component SegmentAPI
+[32mINFO[0m:     [04-11-2024 11:04:12] Started server process [[36m12148[0m]
+[32mINFO[0m:     [04-11-2024 11:04:12] Waiting for application startup.
+[32mINFO[0m:     [04-11-2024 11:04:12] Application startup complete.
+[32mINFO[0m:     [04-11-2024 11:04:12] Uvicorn running on [1mhttp://localhost:8000[0m (Press CTRL+C to quit)
+[32mINFO[0m:     [04-11-2024 11:24:16] Shutting down
+[32mINFO[0m:     [04-11-2024 11:24:16] Waiting for application shutdown.
+[32mINFO[0m:     [04-11-2024 11:24:16] Application shutdown complete.
+[32mINFO[0m:     [04-11-2024 11:24:16] Finished server process [[36m12148[0m]
+[33mWARNING[0m:  [04-11-2024 11:24:24] chroma_server_nofile is not supported on Windows. chroma_server_nofile will not be set.
+[32mINFO[0m:     [04-11-2024 11:24:24] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[36mDEBUG[0m:    [04-11-2024 11:24:24] Starting component System
+[36mDEBUG[0m:    [04-11-2024 11:24:24] Starting component OpenTelemetryClient
+[36mDEBUG[0m:    [04-11-2024 11:24:24] Starting component SimpleAssignmentPolicy
+[36mDEBUG[0m:    [04-11-2024 11:24:24] Starting component SqliteDB
+[36mDEBUG[0m:    [04-11-2024 11:24:24] Starting component Posthog
+[36mDEBUG[0m:    [04-11-2024 11:24:24] Starting component LocalSegmentManager
+[36mDEBUG[0m:    [04-11-2024 11:24:24] Starting component SegmentAPI
+[32mINFO[0m:     [04-11-2024 11:24:24] Started server process [[36m22652[0m]
+[32mINFO[0m:     [04-11-2024 11:24:24] Waiting for application startup.
+[32mINFO[0m:     [04-11-2024 11:24:24] Application startup complete.
+[32mINFO[0m:     [04-11-2024 11:24:24] Uvicorn running on [1mhttp://localhost:8000[0m (Press CTRL+C to quit)
+[33mWARNING[0m:  [04-11-2024 11:29:24] chroma_server_nofile is not supported on Windows. chroma_server_nofile will not be set.
+[32mINFO[0m:     [04-11-2024 11:29:24] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[36mDEBUG[0m:    [04-11-2024 11:29:24] Starting component System
+[36mDEBUG[0m:    [04-11-2024 11:29:24] Starting component OpenTelemetryClient
+[36mDEBUG[0m:    [04-11-2024 11:29:24] Starting component SimpleAssignmentPolicy
+[36mDEBUG[0m:    [04-11-2024 11:29:24] Starting component SqliteDB
+[36mDEBUG[0m:    [04-11-2024 11:29:24] Starting component Posthog
+[36mDEBUG[0m:    [04-11-2024 11:29:24] Starting component LocalSegmentManager
+[36mDEBUG[0m:    [04-11-2024 11:29:24] Starting component SegmentAPI
+[32mINFO[0m:     [04-11-2024 11:29:25] Started server process [[36m3076[0m]
+[32mINFO[0m:     [04-11-2024 11:29:25] Waiting for application startup.
+[32mINFO[0m:     [04-11-2024 11:29:25] Application startup complete.
+[32mINFO[0m:     [04-11-2024 11:29:25] Uvicorn running on [1mhttp://localhost:8000[0m (Press CTRL+C to quit)
+[33mWARNING[0m:  [04-11-2024 11:38:57] chroma_server_nofile is not supported on Windows. chroma_server_nofile will not be set.
+[32mINFO[0m:     [04-11-2024 11:38:58] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[36mDEBUG[0m:    [04-11-2024 11:38:58] Starting component System
+[36mDEBUG[0m:    [04-11-2024 11:38:58] Starting component OpenTelemetryClient
+[36mDEBUG[0m:    [04-11-2024 11:38:58] Starting component SimpleAssignmentPolicy
+[36mDEBUG[0m:    [04-11-2024 11:38:58] Starting component SqliteDB
+[36mDEBUG[0m:    [04-11-2024 11:38:58] Starting component Posthog
+[36mDEBUG[0m:    [04-11-2024 11:38:58] Starting component LocalSegmentManager
+[36mDEBUG[0m:    [04-11-2024 11:38:58] Starting component SegmentAPI
+[32mINFO[0m:     [04-11-2024 11:38:58] Started server process [[36m7008[0m]
+[32mINFO[0m:     [04-11-2024 11:38:58] Waiting for application startup.
+[32mINFO[0m:     [04-11-2024 11:38:58] Application startup complete.
+[32mINFO[0m:     [04-11-2024 11:38:58] Uvicorn running on [1mhttp://localhost:8000[0m (Press CTRL+C to quit)
+[32mINFO[0m:     [04-11-2024 11:39:58] ::1:50356 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 11:39:58] ::1:50356 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 11:39:58] ::1:50356 - "GET /api/v1/collections/CategoryBags?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 11:39:58] ::1:50356 - "GET /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/count HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 11:39:58] ::1:50356 - "GET /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/count HTTP/1.1" 200
+[36mDEBUG[0m:    [04-11-2024 11:39:59] Starting component PersistentLocalHnswSegment
+[32mINFO[0m:     [04-11-2024 11:40:00] ::1:50356 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/query HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 11:40:00] ::1:50356 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/get HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 11:43:10] ::1:50488 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 11:43:10] ::1:50488 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 11:43:10] ::1:50488 - "GET /api/v1/collections/CategoryBags?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 11:43:10] ::1:50488 - "GET /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/count HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 11:43:10] ::1:50488 - "GET /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/count HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 11:43:10] ::1:50488 - "GET /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/count HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 11:43:11] ::1:50488 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/query HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 11:43:11] ::1:50488 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/get HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 11:43:12] ::1:50488 - "GET /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/count HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 11:43:12] ::1:50488 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/query HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 11:43:12] ::1:50488 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/get HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 11:43:12] ::1:50488 - "GET /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/count HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 11:43:12] ::1:50488 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/query HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 11:43:12] ::1:50488 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/get HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 11:43:12] ::1:50488 - "GET /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/count HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 11:43:12] ::1:50488 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/query HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 11:43:13] ::1:50488 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/get HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 11:43:13] ::1:50488 - "GET /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/count HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 11:43:13] ::1:50488 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/query HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 11:43:13] ::1:50488 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/get HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 11:43:13] ::1:50488 - "GET /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/count HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 11:43:13] ::1:50488 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/query HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 11:43:13] ::1:50488 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/get HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 11:44:22] Shutting down
+[32mINFO[0m:     [04-11-2024 11:44:22] Waiting for application shutdown.
+[32mINFO[0m:     [04-11-2024 11:44:22] Application shutdown complete.
+[32mINFO[0m:     [04-11-2024 11:44:22] Finished server process [[36m7008[0m]
+[33mWARNING[0m:  [04-11-2024 11:48:27] chroma_server_nofile is not supported on Windows. chroma_server_nofile will not be set.
+[32mINFO[0m:     [04-11-2024 11:48:28] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[36mDEBUG[0m:    [04-11-2024 11:48:28] Starting component System
+[36mDEBUG[0m:    [04-11-2024 11:48:28] Starting component OpenTelemetryClient
+[36mDEBUG[0m:    [04-11-2024 11:48:28] Starting component SimpleAssignmentPolicy
+[36mDEBUG[0m:    [04-11-2024 11:48:28] Starting component SqliteDB
+[36mDEBUG[0m:    [04-11-2024 11:48:28] Starting component Posthog
+[36mDEBUG[0m:    [04-11-2024 11:48:28] Starting component LocalSegmentManager
+[36mDEBUG[0m:    [04-11-2024 11:48:28] Starting component SegmentAPI
+[32mINFO[0m:     [04-11-2024 11:48:28] Started server process [[36m3364[0m]
+[32mINFO[0m:     [04-11-2024 11:48:28] Waiting for application startup.
+[32mINFO[0m:     [04-11-2024 11:48:28] Application startup complete.
+[32mINFO[0m:     [04-11-2024 11:48:28] Uvicorn running on [1mhttp://localhost:8000[0m (Press CTRL+C to quit)
+[32mINFO[0m:     [04-11-2024 11:59:05] ::1:50953 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 11:59:05] ::1:50953 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 11:59:05] ::1:50953 - "GET /api/v1/collections/CategoryBags?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 11:59:05] ::1:50953 - "GET /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/count HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 11:59:05] ::1:50953 - "GET /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/count HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 11:59:05] ::1:50953 - "GET /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/count HTTP/1.1" 200
+[36mDEBUG[0m:    [04-11-2024 11:59:05] Starting component PersistentLocalHnswSegment
+[32mINFO[0m:     [04-11-2024 11:59:06] ::1:50953 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/query HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 11:59:06] ::1:50953 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/get HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 11:59:06] ::1:50953 - "GET /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/count HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 11:59:06] ::1:50953 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/query HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 11:59:06] ::1:50953 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/get HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 11:59:06] ::1:50953 - "GET /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/count HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 11:59:06] ::1:50953 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/query HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 11:59:07] ::1:50953 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/get HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 11:59:07] ::1:50953 - "GET /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/count HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 11:59:07] ::1:50953 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/query HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 11:59:07] ::1:50953 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/get HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 11:59:07] ::1:50953 - "GET /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/count HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 11:59:07] ::1:50953 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/query HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 11:59:07] ::1:50953 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/get HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 11:59:07] ::1:50953 - "GET /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/count HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 11:59:07] ::1:50953 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/query HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 11:59:07] ::1:50953 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/get HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 11:59:07] ::1:50953 - "GET /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/count HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 11:59:08] ::1:50953 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/query HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 11:59:08] ::1:50953 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/get HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 12:02:57] ::1:51069 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 12:02:57] ::1:51069 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 12:02:57] ::1:51069 - "GET /api/v1/collections/CategoryBags?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 12:02:57] ::1:51069 - "GET /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/count HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 12:02:57] ::1:51069 - "GET /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/count HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 12:02:57] ::1:51069 - "GET /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/count HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 12:02:57] ::1:51069 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/query HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 12:02:57] ::1:51069 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/get HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 12:02:57] ::1:51069 - "GET /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/count HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 12:02:57] ::1:51069 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/query HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 12:02:58] ::1:51069 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/get HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 12:02:58] ::1:51069 - "GET /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/count HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 12:02:58] ::1:51069 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/query HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 12:02:58] ::1:51069 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/get HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 12:02:58] ::1:51069 - "GET /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/count HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 12:02:58] ::1:51069 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/query HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 12:02:58] ::1:51069 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/get HTTP/1.1" 200
+[33mWARNING[0m:  [04-11-2024 12:04:26] chroma_server_nofile is not supported on Windows. chroma_server_nofile will not be set.
+[32mINFO[0m:     [04-11-2024 12:04:26] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[36mDEBUG[0m:    [04-11-2024 12:04:26] Starting component System
+[36mDEBUG[0m:    [04-11-2024 12:04:26] Starting component OpenTelemetryClient
+[36mDEBUG[0m:    [04-11-2024 12:04:26] Starting component SimpleAssignmentPolicy
+[36mDEBUG[0m:    [04-11-2024 12:04:26] Starting component SqliteDB
+[36mDEBUG[0m:    [04-11-2024 12:04:26] Starting component Posthog
+[36mDEBUG[0m:    [04-11-2024 12:04:26] Starting component LocalSegmentManager
+[36mDEBUG[0m:    [04-11-2024 12:04:26] Starting component SegmentAPI
+[32mINFO[0m:     [04-11-2024 12:04:26] Started server process [[36m1060[0m]
+[32mINFO[0m:     [04-11-2024 12:04:26] Waiting for application startup.
+[32mINFO[0m:     [04-11-2024 12:04:26] Application startup complete.
+[32mINFO[0m:     [04-11-2024 12:04:26] Uvicorn running on [1mhttp://localhost:8000[0m (Press CTRL+C to quit)
+[32mINFO[0m:     [04-11-2024 12:05:21] ::1:51173 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 12:05:21] ::1:51173 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 12:05:21] ::1:51173 - "GET /api/v1/collections/CategoryBags?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 12:05:21] ::1:51173 - "GET /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/count HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 12:05:21] ::1:51173 - "GET /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/count HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 12:05:21] ::1:51173 - "GET /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/count HTTP/1.1" 200
+[36mDEBUG[0m:    [04-11-2024 12:05:21] Starting component PersistentLocalHnswSegment
+[32mINFO[0m:     [04-11-2024 12:05:22] ::1:51173 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/query HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 12:05:22] ::1:51173 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/get HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 12:05:22] ::1:51173 - "GET /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/count HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 12:05:22] ::1:51173 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/query HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 12:05:22] ::1:51173 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/get HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 12:05:22] ::1:51173 - "GET /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/count HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 12:05:22] ::1:51173 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/query HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 12:05:22] ::1:51173 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/get HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 12:05:22] ::1:51173 - "GET /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/count HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 12:05:22] ::1:51173 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/query HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 12:05:22] ::1:51173 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/get HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 12:05:22] ::1:51173 - "GET /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/count HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 12:05:22] ::1:51173 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/query HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 12:05:23] ::1:51173 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/get HTTP/1.1" 200
+[33mWARNING[0m:  [04-11-2024 13:04:14] chroma_server_nofile is not supported on Windows. chroma_server_nofile will not be set.
+[32mINFO[0m:     [04-11-2024 13:04:14] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[36mDEBUG[0m:    [04-11-2024 13:04:14] Starting component System
+[36mDEBUG[0m:    [04-11-2024 13:04:14] Starting component OpenTelemetryClient
+[36mDEBUG[0m:    [04-11-2024 13:04:14] Starting component SimpleAssignmentPolicy
+[36mDEBUG[0m:    [04-11-2024 13:04:14] Starting component SqliteDB
+[36mDEBUG[0m:    [04-11-2024 13:04:14] Starting component Posthog
+[36mDEBUG[0m:    [04-11-2024 13:04:14] Starting component LocalSegmentManager
+[36mDEBUG[0m:    [04-11-2024 13:04:14] Starting component SegmentAPI
+[32mINFO[0m:     [04-11-2024 13:04:14] Started server process [[36m2684[0m]
+[32mINFO[0m:     [04-11-2024 13:04:14] Waiting for application startup.
+[32mINFO[0m:     [04-11-2024 13:04:14] Application startup complete.
+[32mINFO[0m:     [04-11-2024 13:04:14] Uvicorn running on [1mhttp://localhost:8000[0m (Press CTRL+C to quit)
+[32mINFO[0m:     [04-11-2024 13:05:12] ::1:52192 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 13:05:12] ::1:52192 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 13:05:12] ::1:52192 - "GET /api/v1/collections/CategoryBags?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 13:05:12] ::1:52192 - "GET /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/count HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 13:05:12] ::1:52192 - "GET /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/count HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 13:05:12] ::1:52192 - "GET /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/count HTTP/1.1" 200
+[36mDEBUG[0m:    [04-11-2024 13:05:13] Starting component PersistentLocalHnswSegment
+[32mINFO[0m:     [04-11-2024 13:05:13] ::1:52192 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/query HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 13:05:13] ::1:52192 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/get HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 13:05:13] ::1:52192 - "GET /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/count HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 13:05:13] ::1:52192 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/query HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 13:05:14] ::1:52192 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/get HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 13:05:14] ::1:52192 - "GET /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/count HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 13:05:14] ::1:52192 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/query HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 13:05:14] ::1:52192 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/get HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 13:05:14] ::1:52192 - "GET /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/count HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 13:05:14] ::1:52192 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/query HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 13:05:14] ::1:52192 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/get HTTP/1.1" 200
+[33mWARNING[0m:  [04-11-2024 13:32:55] chroma_server_nofile is not supported on Windows. chroma_server_nofile will not be set.
+[32mINFO[0m:     [04-11-2024 13:32:55] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[36mDEBUG[0m:    [04-11-2024 13:32:55] Starting component System
+[36mDEBUG[0m:    [04-11-2024 13:32:55] Starting component OpenTelemetryClient
+[36mDEBUG[0m:    [04-11-2024 13:32:55] Starting component SimpleAssignmentPolicy
+[36mDEBUG[0m:    [04-11-2024 13:32:55] Starting component SqliteDB
+[36mDEBUG[0m:    [04-11-2024 13:32:55] Starting component Posthog
+[36mDEBUG[0m:    [04-11-2024 13:32:55] Starting component LocalSegmentManager
+[36mDEBUG[0m:    [04-11-2024 13:32:55] Starting component SegmentAPI
+[32mINFO[0m:     [04-11-2024 13:32:55] Started server process [[36m4860[0m]
+[32mINFO[0m:     [04-11-2024 13:32:55] Waiting for application startup.
+[32mINFO[0m:     [04-11-2024 13:32:55] Application startup complete.
+[32mINFO[0m:     [04-11-2024 13:32:55] Uvicorn running on [1mhttp://localhost:8000[0m (Press CTRL+C to quit)
+[32mINFO[0m:     [04-11-2024 13:35:19] ::1:59688 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 13:35:19] ::1:59688 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 13:35:19] ::1:59688 - "GET /api/v1/collections/CategoryBags?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 13:35:19] ::1:59688 - "GET /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/count HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 13:35:19] ::1:59688 - "GET /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/count HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 13:35:19] ::1:59688 - "GET /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/count HTTP/1.1" 200
+[36mDEBUG[0m:    [04-11-2024 13:35:20] Starting component PersistentLocalHnswSegment
+[32mINFO[0m:     [04-11-2024 13:35:20] ::1:59688 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/query HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 13:35:20] ::1:59688 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/get HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 13:35:20] ::1:59688 - "GET /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/count HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 13:35:20] ::1:59688 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/query HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 13:35:20] ::1:59688 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/get HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 13:35:20] ::1:59688 - "GET /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/count HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 13:35:20] ::1:59688 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/query HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 13:35:21] ::1:59688 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/get HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 13:35:21] ::1:59688 - "GET /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/count HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 13:35:21] ::1:59688 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/query HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 13:35:21] ::1:59688 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/get HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 13:35:21] ::1:59688 - "GET /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/count HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 13:35:21] ::1:59688 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/query HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2024 13:35:21] ::1:59688 - "POST /api/v1/collections/fc826410-a6e3-4910-b423-03fd406403a1/get HTTP/1.1" 200
