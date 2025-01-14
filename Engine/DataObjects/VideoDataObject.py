@@ -5,7 +5,7 @@ from Engine.DataObjects.Base import BaseData
 
 class VideoData(BaseData):
     def __init__(self, video_path, event_id):
-        super().__init__(event_id, "video")
+        super().__init__(event_id, video_path.name, "video")
         self.video_path = video_path
         self.video = None
         self.format = None

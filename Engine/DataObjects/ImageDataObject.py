@@ -5,7 +5,7 @@ from Engine.DataObjects.Base import BaseData
 
 class ImageData(BaseData):
     def __init__(self, image_path, event_id):
-        super().__init__(event_id, "image")
+        super().__init__(event_id, image_path.name, "image")
         self.image_path = image_path
         self.image = None
         self.format = None

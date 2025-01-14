@@ -5,7 +5,7 @@ from Engine.DataObjects.Base import BaseData
 
 class AudioData(BaseData):
     def __init__(self, audio_path, event_id):
-        super().__init__(event_id, "audio")
+        super().__init__(event_id, audio_path.name, "audio")
         self.audio_path = audio_path
         self.audio = None
         self.format = None

@@ -24,7 +24,12 @@ class LLMScoring:
                 "serial_id": data_serial_id,
                 "score": data_object_score
             }
-            self.monitor.publish(objective=f"Scored, ID {data_serial_id}", module="LLM Scoring", data=data_set)
+            data_set1 = {
+                "serial_id": data_serial_id,
+                "filename": i.get_filename(),
+                "score": data_object_score
+            }
+            self.monitor.publish(objective=f"Scored, ID {data_serial_id}", module="LLM Scoring", data=data_set1)
             self.final_json.append(data_set)
 
         combine_text_results = self.llm_generator.score_text_by_llm(overall, system_prompt=SingleAnalysisPrompt)

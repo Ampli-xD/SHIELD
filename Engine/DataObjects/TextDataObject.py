@@ -3,7 +3,7 @@ from Engine.DataObjects.Base import BaseData
 
 class TextData(BaseData):
     def __init__(self, text_content, event_id):
-        super().__init__(event_id, "text")
+        super().__init__(event_id, text_content.name, "text")
         self.text_content = text_content
 
     def load_data(self):

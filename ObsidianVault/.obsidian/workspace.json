@@ -11,17 +11,14 @@
             "id": "dcfb65740352e77a",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "Untitled.canvas",
-                "viewState": {
-                  "x": 657.5664803549095,
-                  "y": 487.96978165386264,
-                  "zoom": -1.2065192247719034
-                }
+                "file": "Engine/VectorBasedQuantifying.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "Untitled"
+              "icon": "lucide-file",
+              "title": "VectorBasedQuantifying"
             }
           },
           {
@@ -195,16 +192,16 @@
   },
   "active": "dcfb65740352e77a",
   "lastOpenFiles": [
-    "Versions.md",
+    "Engine/Processors.md",
+    "Engine/LLMBasedQuantifying.md",
+    "Engine/CorruptionDetection.md",
     "Untitled.canvas",
+    "Versions.md",
     "Setup/MainSetup.md",
     "Frontend Designs/System Starter.canvas",
     "Frontend Designs/Loader.canvas",
     "Frontend Designs/Dashboard.canvas",
     "Engine/VectorBasedQuantifying.md",
-    "Engine/Processors.md",
-    "Engine/LLMBasedQuantifying.md",
-    "Engine/CorruptionDetection.md",
     "Frontend Designs",
     "Engine/Processors.md~",
     "Version/V0.0.1.md",

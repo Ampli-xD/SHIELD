@@ -1,11 +1,12 @@
 class BaseData:
-    def __init__(self, event_id, data_type):
+    def __init__(self, event_id, filename, data_type):
         self.event_id = event_id
         self.data_type = data_type
         self.serial_id = None
         self.parent_prompt = None
         self.context = None
         self.corrupted = False
+        self.filename = filename
 
     def get_event_id(self):
         return self.event_id
@@ -18,6 +19,9 @@ class BaseData:
 
     def get_context(self):
         return self.context
+
+    def get_filename(self):
+        return self.filename
 
     def set_event_id(self, event_id):
         self.event_id = event_id
