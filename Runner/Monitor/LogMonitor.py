@@ -50,7 +50,7 @@ class Monitor:
                   'self_harm_and_suicide',
                   'child_abuse_and_exploitation', 'racial_slurs', 'hate_speeches', 'substance_abuse', 'body_shaming',
                   'homophobic_content', 'transphobic_content', 'sexist_content', 'harassment', 'cyberbullying',
-                  'misinformation_and_fake_news', 'invasive_privacy_violation']
+                  'misinformation_and_fake_news', 'invasive_privacy_violation', 'type', 'time']
 
         with open(file_path, mode='a', newline='') as file:
             writer = csv.writer(file)
@@ -61,6 +61,8 @@ class Monitor:
             row = [data['serial_id'], data['filename']]
             for key, value in data['score'].items():
                 row.append(value)
+            row.append(data['type'])
+            row.append(data['time'])
 
             writer.writerow(row)
 

@@ -21,25 +21,27 @@ class VideoProcessor:
         self.video_data = video_data_object
         try:
             uploaded_video = self.upload_video()
-            processing_complete = False
+            # processing_complete = False
 
             # Polling with a manual "processing" check
-            while not processing_complete:
+            while True:
                 try:
                     uploaded_video = genai.get_file(uploaded_video.name)
                     self.monitor.publish(objective="Fetched Video Analysis...", module="LOG (VideoProcessor)")
+                    break
                 except:
-                    try:
-                        uploaded_video = genai.get_file(uploaded_video.name)
-                        self.monitor.publish(objective="Fetched Video Analysis...", module="LOG (VideoProcessor)")
-                    except:
-                        uploaded_video = self.upload_video()
-                        uploaded_video = genai.get_file(uploaded_video.name)
-                        self.monitor.publish(objective="Fetched Video Analysis...", module="LOG (VideoProcessor)")
+                    pass
+                    # try:
+                    #     uploaded_video = genai.get_file(uploaded_video.name)
+                    #     self.monitor.publish(objective="Fetched Video Analysis...", module="LOG (VideoProcessor)")
+                    # except:
+                    #     uploaded_video = self.upload_video()
+                    #     uploaded_video = genai.get_file(uploaded_video.name)
+                    #     self.monitor.publish(objective="Fetched Video Analysis...", module="LOG (VideoProcessor)")
 
                 # Check if processing is complete (adjust based on API response)
-                if self.is_processing_complete(uploaded_video):
-                    processing_complete = True
+                # if self.is_processing_complete(uploaded_video):
+                #     processing_complete = True
 
             model = genai.GenerativeModel(model_name="gemini-1.5-pro-002")
             prompt = f"Analyze the video named '{uploaded_video.name}' in depth without missing any details."
@@ -53,12 +55,12 @@ class VideoProcessor:
         except Exception as e:
             print(f"Error during video analysis: {e}")
 
-    def is_processing_complete(self, file_obj):
-        # Placeholder for actual processing completion check.
-        # Replace this with the real condition based on file_obj's attributes.
-        # print("Debug: Checking if processing is complete...")
-        # For demonstration purposes, we assume it's complete after one check.
-        return True
+    # def is_processing_complete(self, file_obj):
+    #     # Placeholder for actual processing completion check.
+    #     # Replace this with the real condition based on file_obj's attributes.
+    #     # print("Debug: Checking if processing is complete...")
+    #     # For demonstration purposes, we assume it's complete after one check.
+    #     return True
 
     def update_context(self, text):
         if not self.video_data.set_context(text):

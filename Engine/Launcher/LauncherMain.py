@@ -36,7 +36,11 @@ def main():
 
         # Perform analysis tasks
         task_performer = TaskPerformer(event, monitor)
+        start_time = time.time()
         json_vector_response, json_llm_response = task_performer.perform_tasks()
+        end_time = time.time()
+        execution_time = end_time - start_time
+        monitor.publish(objective="Fetched Image analysis...", module="LOG (ImageProcessor)")
 
         if not json_vector_response or not json_llm_response:
             return {"error": "Analysis failed to produce results"}
