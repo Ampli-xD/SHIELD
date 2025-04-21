@@ -24,6 +24,7 @@ class LLMScoring:
             data_object_score = self.llm_generator.score_text_by_llm(i.get_context(),
                                                                      system_prompt=SingleAnalysisPrompt)
             end_time = time.time()
+            time.sleep(2)
 
             data_set = {
                 "serial_id": data_serial_id,

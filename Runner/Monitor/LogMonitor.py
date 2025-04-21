@@ -15,33 +15,36 @@ class Monitor:
 
     def receiver(self):
         while True:
-            message = self.subs.receive()
-            timestamp = message["timestamp"]
-            module = message["module"]
-            objective = message["objective"]
-            data = message["data"]
-            extra = message["extra"]
-            if data != "":
-                self.append_to_csv("storage.csv", data)
+            try:
+                message = self.subs.receive()
+                timestamp = message["timestamp"]
+                module = message["module"]
+                objective = message["objective"]
+                data = message["data"]
+                extra = message["extra"]
+                if data != "":
+                    self.append_to_csv("storage.csv", data)
 
-            # {
-            #     "timestamp": timestamp,
-            #     "objective": objective,
-            #     "module": module,
-            #     "data": data,
-            #     "extra":extra
-            # }
+                # {
+                #     "timestamp": timestamp,
+                #     "objective": objective,
+                #     "module": module,
+                #     "data": data,
+                #     "extra":extra
+                # }
 
-            output = f"""
+                output = f"""
 [{timestamp}] [{module}] [{objective}]"""
 
-            if data != "":
-                output += f"Data:\n{json.dumps(data, indent=4)}\n"
+                if data != "":
+                    output += f"Data:\n{json.dumps(data, indent=4)}\n"
 
-            if extra != "":
-                output += f"Extra: {extra}\n"
+                if extra != "":
+                    output += f"Extra: {extra}\n"
 
-            print(output)
+                print(output)
+            except:
+                pass
 
     @staticmethod
     def append_to_csv(file_path, data):

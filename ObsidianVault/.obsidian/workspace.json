@@ -22,6 +22,76 @@
             }
           },
           {
+            "id": "beba84edb2c39034",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Versions.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Versions"
+            }
+          },
+          {
+            "id": "dae162c1701db93e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Briefing Doc.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Briefing Doc"
+            }
+          },
+          {
+            "id": "8687fc2fc58d7483",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Idea Doc.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Idea Doc"
+            }
+          },
+          {
+            "id": "34da3b4748c05f41",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Results Briefing Doc.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Results Briefing Doc"
+            }
+          },
+          {
+            "id": "b40e49fb393f5aaf",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "The Art of Holistic Living.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "The Art of Holistic Living"
+            }
+          },
+          {
             "id": "865f297f98929050",
             "type": "leaf",
             "state": {
@@ -49,7 +119,8 @@
               "title": "Versions"
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -68,7 +139,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabetical",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -182,6 +254,9 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "markdown-importer:Open format converter": false,
+      "audio-recorder:Start/stop recording": false,
+      "publish:Publish changes...": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -190,18 +265,33 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "dcfb65740352e77a",
+  "active": "34da3b4748c05f41",
   "lastOpenFiles": [
-    "Engine/Processors.md",
-    "Engine/LLMBasedQuantifying.md",
-    "Engine/CorruptionDetection.md",
-    "Untitled.canvas",
+    "Briefing Doc.md",
+    "The Art of Holistic Living.md",
+    "Results Briefing Doc.md",
+    "Pasted image 20250420234918.png",
+    "Pasted image 20250420234625.png",
+    "Pasted image 20250420234006.png",
+    "Pasted image 20250420234003.png",
+    "Pasted image 20250420233429.png",
+    "Pasted image 20250420233226.png",
+    "Pasted image 20250420232823.png",
+    "Idea Doc.md",
+    "Pasted image 20250409210629.png",
+    "Pasted image 20250409210624.png",
     "Versions.md",
-    "Setup/MainSetup.md",
-    "Frontend Designs/System Starter.canvas",
-    "Frontend Designs/Loader.canvas",
+    "Untitled.canvas",
+    "2025-04-09.md",
+    "Pasted image 20250409222234.png",
     "Frontend Designs/Dashboard.canvas",
+    "Frontend Designs/Loader.canvas",
+    "Frontend Designs/System Starter.canvas",
+    "Setup/MainSetup.md",
     "Engine/VectorBasedQuantifying.md",
+    "Engine/Processors.md",
+    "Engine/CorruptionDetection.md",
+    "Engine/LLMBasedQuantifying.md",
     "Frontend Designs",
     "Engine/Processors.md~",
     "Version/V0.0.1.md",

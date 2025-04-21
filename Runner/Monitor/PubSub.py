@@ -59,8 +59,9 @@ class Subscriber:
                 message = self.socket.recv_json()
                 return message
             except zmq.ZMQError as e:
-                print(f"Error receiving message: {e}")
-                break
+                pass
+                # print(f"Error receiving message: {e}")
+                # break
 
     def close(self):
         self.socket.close()

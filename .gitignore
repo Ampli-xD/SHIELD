@@ -3,3 +3,9 @@ venv
 MiniProject.iml
 ParsedData
 .vscode
+__pycache__
+*.pyc
+ObsidianVault
+chroma.log
+Tests
+Engine/Launcher/TempFileStorage
