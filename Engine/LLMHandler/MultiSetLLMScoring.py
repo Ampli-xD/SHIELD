@@ -3,14 +3,11 @@ import time
 from Engine.DataObjects.Event import EventData
 from Engine.LLMHandler.LLMCaller import LLMGenerator
 from Engine.LLMHandler.LLMPrompts import SingleAnalysisPrompt
-from Runner.Monitor.PubSub import Publisher
-
 
 class LLMScoring:
-    def __init__(self, api_key, monitor: Publisher):
+    def __init__(self, api_key):
         self.llm_generator = LLMGenerator(api_key)
         self.final_json = []
-        self.monitor = monitor
 
     def get_llm_scores(self, event: EventData):
         self.final_json = []
@@ -28,7 +25,8 @@ class LLMScoring:
 
             data_set = {
                 "serial_id": data_serial_id,
-                "score": data_object_score
+                "score": data_object_score,
+                "time": f"{end_time - start_time: .6f}"
             }
             data_set1 = {
                 "serial_id": data_serial_id,
@@ -37,13 +35,5 @@ class LLMScoring:
                 "type": "LLMScoring",
                 "time": f"{end_time - start_time: .6f}"
             }
-            self.monitor.publish(objective=f"Scored, ID {data_serial_id}", module="LLM Scoring", data=data_set1)
-            self.final_json.append(data_set)
 
-        combine_text_results = self.llm_generator.score_text_by_llm(overall, system_prompt=SingleAnalysisPrompt)
-        self.final_json.append({
-            "serial_id": "OVERALL",
-            "score": combine_text_results
-        })
-
-        return self.final_json
+        return data_set

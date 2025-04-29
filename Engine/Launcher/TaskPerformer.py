@@ -7,9 +7,8 @@ from Engine.VectorHandler.MultiSetVectorScoring import VectorScoring
 
 
 class TaskPerformer:
-    def __init__(self, event, monitor):
+    def __init__(self, event):
         self.event = event
-        self.monitor = monitor
 
     def perform_tasks(self):
         self._process_data()
@@ -21,8 +20,8 @@ class TaskPerformer:
         api_key = "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"
         # api_key = "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"
         # api_key = "AIzaSyAmo4IjmFXyO8EIIW8iCen6zqLUKMEiByc"
-        audio_processor = AudioProcessing.AudioProcessor(api_key, self.monitor)
-        image_processor = ImageProcessing.ImageProcessor(api_key, self.monitor)
+        audio_processor = AudioProcessing.AudioProcessor(api_key)
+        image_processor = ImageProcessing.ImageProcessor(api_key)
         video_processor = VideoProcessing.VideoProcessor("AIzaSyD9ygld0-1qZsYekMoOrZYFGDPuEfDD7xA", self.monitor)
 
         for data_object in self.event.get_all_data():

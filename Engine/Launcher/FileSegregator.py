@@ -9,7 +9,7 @@ class FileSegregator:
     TEXT_EXTENSIONS = {'.txt'}
     VIDEO_EXTENSIONS = {'.mp4', '.avi', '.mov', '.mkv', '.flv'}
 
-    def __init__(self, folder_path, event_object, monitor):
+    def __init__(self, folder_path, event_object):
         self.monitor = monitor
         self.folder_path = folder_path
         self.event_object = event_object
@@ -17,16 +17,7 @@ class FileSegregator:
     def segregate_files(self):
         try:
             # Create a Path object with the absolute folder path
-            self.monitor.publish(objective="Segregating Files...", module="LOG (FileSegregator)")
             folder_path = Path(self.folder_path).resolve()
-
-            # Check if the path exists and is a directory
-            if not folder_path.is_dir():
-                self.monitor.publish(
-                    objective=f"Error: The folder path '{folder_path}' does not exist or is not a directory.",
-                    module="LOG (FileSegregator)")
-                print(f"Error: The folder path '{folder_path}' does not exist or is not a directory.")
-                return False
 
             # Iterate through files in the specified folder
             for file in folder_path.iterdir():
