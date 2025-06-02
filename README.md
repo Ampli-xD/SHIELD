@@ -1,6 +1,6 @@
-# MiniProject
+# SHIELD: System for Harmful explicit-content Identification and Evaluation through LLM-Driven approach
 
-A content analysis pipeline combining vector‐based similarity scoring and LLM‐based classification.  
+A content analysis pipeline with vector‐based similarity scoring and LLM‐based classification.  
 It ingests text, image, audio and video data, assigns serial IDs, checks for corruption, scores content across 15 sensitive categories, and visualizes results in a Streamlit dashboard.
 
 ## Features
@@ -21,6 +21,7 @@ pip install .
 
 ## Quick Start
 
+0. Firstly, setup ChromaDB HTTP server & and use the collection creator in [`Engine/VectorHandler/`](Engine/VectorHandler/) to create the collection to be used for semantic searching.
 1. Prepare your data folder or use file uploader in Streamlit.
 2. Run the dashboard:
     ```sh
