@@ -51,10 +51,10 @@ def segregate_files(folder_path, event_object):
 def perform_tasks(folder_path):
     event = Event.EventData(event_id=1234, monitor=monitor)
     segregate_files(folder_path, event)
-    api_key = "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"
+    api_key = "add_api_key_here"
     audio_processor = AudioProcessing.AudioProcessor(api_key)
     image_processor = ImageProcessing.ImageProcessor(api_key)
-    video_processor = VideoProcessing.VideoProcessor("AIzaSyD9ygld0-1qZsYekMoOrZYFGDPuEfDD7xA")
+    video_processor = VideoProcessing.VideoProcessor("add_api_key_here")
     llm_scorer = LLMScoring(api_key, monitor)
     vector_scorer = VectorScoring(path="../Engine/VectorHandler/persistent_chroma_db", monitor=monitor)
 
