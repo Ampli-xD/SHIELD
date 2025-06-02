@@ -34,7 +34,7 @@ See the [docs](docs/) folder for architecture, module reference, usage examples,
 
 ### Files in `docs` folder
 
-- [`docs/Architecture.md`](docs/Architecture.md)
-- [`docs/ModuleReference.md`](docs/ModuleReference.md)
-- [`docs/UsageExamples.md`](docs/UsageExamples.md)
-- [`docs/ContributionGuidelines.md`](docs/ContributionGuidelines.md)
+- [`docs/Architecture.md`](docs/architecture.md)
+- [`docs/ModuleReference.md`](docs/modules.md)
+- [`docs/UsageExamples.md`](docs/usage.md)
+- [`docs/ContributionGuidelines.md`](CONTRIBUTING.md)
