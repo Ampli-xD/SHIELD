@@ -18,12 +18,12 @@ class TaskPerformer:
         return json_vector_response, json_llm_response
 
     def _process_data(self):
-        api_key = "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"
-        # api_key = "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"
-        # api_key = "AIzaSyAmo4IjmFXyO8EIIW8iCen6zqLUKMEiByc"
+        api_key = "add_api_key_here"
+        # api_key = "add_api_key_here"
+        # api_key = "add_api_key_here"
         audio_processor = AudioProcessing.AudioProcessor(api_key, self.monitor)
         image_processor = ImageProcessing.ImageProcessor(api_key, self.monitor)
-        video_processor = VideoProcessing.VideoProcessor("AIzaSyD9ygld0-1qZsYekMoOrZYFGDPuEfDD7xA", self.monitor)
+        video_processor = VideoProcessing.VideoProcessor("add_api_key_here", self.monitor)
 
         for data_object in self.event.get_all_data():
             if data_object.get_data_type() == 'video':
@@ -38,8 +38,8 @@ class TaskPerformer:
         combiner.combine_contexts(self.event)
 
     def _get_scores(self):
-        api_key = "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"
-        # api_key = "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"
+        api_key = "add_api_key_here"
+        # api_key = "add_api_key_here"
         llm_scorer = LLMScoring(api_key, self.monitor)
         ROOT_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
         vector_scorer = VectorScoring(
